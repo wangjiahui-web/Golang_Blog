@@ -1,0 +1,38 @@
+[2023-04-28T18:00:42.017+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/index.html	{"status": 200, "method": "GET", "path": "/swagger/index.html", "query": "", "ip": "::1", "errors": "", "cost": "749.716µs"}
+[2023-04-28T18:00:42.103+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/swagger-ui-bundle.js	{"status": 200, "method": "GET", "path": "/swagger/swagger-ui-bundle.js", "query": "", "ip": "::1", "errors": "", "cost": "1.099861ms"}
+[2023-04-28T18:00:42.106+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/swagger-ui.css	{"status": 200, "method": "GET", "path": "/swagger/swagger-ui.css", "query": "", "ip": "::1", "errors": "", "cost": "160.419µs"}
+[2023-04-28T18:00:42.107+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/swagger-ui-standalone-preset.js	{"status": 200, "method": "GET", "path": "/swagger/swagger-ui-standalone-preset.js", "query": "", "ip": "::1", "errors": "", "cost": "259.198µs"}
+[2023-04-28T18:00:42.428+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/doc.json	{"status": 500, "method": "GET", "path": "/swagger/doc.json", "query": "", "ip": "::1", "errors": "", "cost": "16.029µs"}
+[2023-04-28T18:00:42.500+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/favicon-32x32.png	{"status": 200, "method": "GET", "path": "/swagger/favicon-32x32.png", "query": "", "ip": "::1", "errors": "", "cost": "29.57µs"}
+[2023-04-28T18:00:48.549+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/doc.json	{"status": 500, "method": "GET", "path": "/swagger/doc.json", "query": "", "ip": "::1", "errors": "", "cost": "12.404µs"}
+[2023-04-28T18:01:50.672+0800]	[ INFO]	[        blogProject/mian.go:86]	3秒超时退出
+[2023-04-28T18:01:50.672+0800]	[ INFO]	[        blogProject/mian.go:89]	服务器关闭
+[2023-04-28T18:17:38.422+0800]	[ INFO]	[        blogProject/mian.go:85]	3秒超时退出
+[2023-04-28T18:17:38.426+0800]	[ INFO]	[        blogProject/mian.go:88]	服务器关闭
+[2023-04-28T19:14:53.493+0800]	[ INFO]	[        blogProject/mian.go:86]	3秒超时退出
+[2023-04-28T19:14:53.497+0800]	[ INFO]	[        blogProject/mian.go:89]	服务器关闭
+[2023-04-28T19:16:06.060+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/index.html	{"status": 200, "method": "GET", "path": "/swagger/index.html", "query": "", "ip": "::1", "errors": "", "cost": "505.252µs"}
+[2023-04-28T19:16:06.097+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/swagger-ui.css	{"status": 200, "method": "GET", "path": "/swagger/swagger-ui.css", "query": "", "ip": "::1", "errors": "", "cost": "226.952µs"}
+[2023-04-28T19:16:06.111+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/swagger-ui-standalone-preset.js	{"status": 200, "method": "GET", "path": "/swagger/swagger-ui-standalone-preset.js", "query": "", "ip": "::1", "errors": "", "cost": "445.573µs"}
+[2023-04-28T19:16:06.111+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/swagger-ui-bundle.js	{"status": 200, "method": "GET", "path": "/swagger/swagger-ui-bundle.js", "query": "", "ip": "::1", "errors": "", "cost": "6.093775ms"}
+[2023-04-28T19:16:06.392+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/doc.json	{"status": 500, "method": "GET", "path": "/swagger/doc.json", "query": "", "ip": "::1", "errors": "", "cost": "47.217µs"}
+[2023-04-28T19:16:06.407+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/favicon-32x32.png	{"status": 200, "method": "GET", "path": "/swagger/favicon-32x32.png", "query": "", "ip": "::1", "errors": "", "cost": "28.729µs"}
+[2023-04-28T19:16:17.155+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/docx.json	{"status": 404, "method": "GET", "path": "/swagger/docx.json", "query": "", "ip": "::1", "errors": "", "cost": "53.943µs"}
+[2023-04-28T19:16:24.097+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/docx.json	{"status": 404, "method": "GET", "path": "/swagger/docx.json", "query": "", "ip": "::1", "errors": "", "cost": "33.686µs"}
+[2023-04-28T19:16:27.486+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/doc.json	{"status": 500, "method": "GET", "path": "/swagger/doc.json", "query": "", "ip": "::1", "errors": "", "cost": "20.347µs"}
+[2023-04-28T19:16:31.295+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/index.html	{"status": 200, "method": "GET", "path": "/swagger/index.html", "query": "", "ip": "::1", "errors": "", "cost": "139.53µs"}
+[2023-04-28T19:16:31.309+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/swagger-ui.css	{"status": 304, "method": "GET", "path": "/swagger/swagger-ui.css", "query": "", "ip": "::1", "errors": "", "cost": "27.446µs"}
+[2023-04-28T19:16:31.309+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/swagger-ui-standalone-preset.js	{"status": 304, "method": "GET", "path": "/swagger/swagger-ui-standalone-preset.js", "query": "", "ip": "::1", "errors": "", "cost": "20.897µs"}
+[2023-04-28T19:16:31.310+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/swagger-ui-bundle.js	{"status": 304, "method": "GET", "path": "/swagger/swagger-ui-bundle.js", "query": "", "ip": "::1", "errors": "", "cost": "58.534µs"}
+[2023-04-28T19:16:31.395+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/doc.json	{"status": 500, "method": "GET", "path": "/swagger/doc.json", "query": "", "ip": "::1", "errors": "", "cost": "10.726µs"}
+[2023-04-28T19:16:31.444+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/favicon-32x32.png	{"status": 304, "method": "GET", "path": "/swagger/favicon-32x32.png", "query": "", "ip": "::1", "errors": "", "cost": "20.728µs"}
+[2023-04-28T19:16:52.588+0800]	[ INFO]	[        blogProject/mian.go:86]	3秒超时退出
+[2023-04-28T19:16:52.588+0800]	[ INFO]	[        blogProject/mian.go:89]	服务器关闭
+[2023-04-28T19:22:44.901+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/index.html	{"status": 200, "method": "GET", "path": "/swagger/index.html", "query": "", "ip": "::1", "errors": "", "cost": "606.703µs"}
+[2023-04-28T19:22:44.917+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/swagger-ui.css	{"status": 200, "method": "GET", "path": "/swagger/swagger-ui.css", "query": "", "ip": "::1", "errors": "", "cost": "252.562µs"}
+[2023-04-28T19:22:44.919+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/swagger-ui-standalone-preset.js	{"status": 200, "method": "GET", "path": "/swagger/swagger-ui-standalone-preset.js", "query": "", "ip": "::1", "errors": "", "cost": "254.393µs"}
+[2023-04-28T19:22:44.920+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/swagger-ui-bundle.js	{"status": 200, "method": "GET", "path": "/swagger/swagger-ui-bundle.js", "query": "", "ip": "::1", "errors": "", "cost": "2.182588ms"}
+[2023-04-28T19:22:45.035+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/doc.json	{"status": 200, "method": "GET", "path": "/swagger/doc.json", "query": "", "ip": "::1", "errors": "", "cost": "624.298µs"}
+[2023-04-28T19:22:45.042+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/favicon-32x32.png	{"status": 200, "method": "GET", "path": "/swagger/favicon-32x32.png", "query": "", "ip": "::1", "errors": "", "cost": "37.251µs"}
+[2023-04-29T14:24:55.750+0800]	[ INFO]	[        blogProject/main.go:87]	3秒超时退出
+[2023-04-29T14:24:55.763+0800]	[ INFO]	[        blogProject/main.go:90]	服务器关闭
