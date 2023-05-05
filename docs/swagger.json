@@ -18,6 +18,233 @@
     "host": "localhost:8080",
     "basePath": "/",
     "paths": {
+        "/admin/AdminLogin": {
+            "post": {
+                "description": "Post 请求, 发送 Json 数据, 参数在消息体中 管理员登陆",
+                "consumes": [
+                    "multipart/form-data"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "adminApi"
+                ],
+                "summary": "Post 请求, 发送 Json 数据, 参数在消息体中 管理员登陆",
+                "parameters": [
+                    {
+                        "maxLength": 32,
+                        "minLength": 1,
+                        "type": "string",
+                        "description": "登陆的用户名",
+                        "name": "username",
+                        "in": "formData"
+                    },
+                    {
+                        "maxLength": 32,
+                        "minLength": 1,
+                        "type": "string",
+                        "description": "用户密码",
+                        "name": "password",
+                        "in": "formData"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/swagger.HttpOk"
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request",
+                        "schema": {
+                            "$ref": "#/definitions/swagger.Http400"
+                        }
+                    },
+                    "404": {
+                        "description": "Page Not Found",
+                        "schema": {
+                            "$ref": "#/definitions/swagger.Http404"
+                        }
+                    },
+                    "500": {
+                        "description": "InternalError",
+                        "schema": {
+                            "$ref": "#/definitions/swagger.Http500"
+                        }
+                    }
+                }
+            }
+        },
+        "/admin/AdminRegister": {
+            "post": {
+                "description": "Post 请求, 发送 Json 数据, 参数在消息体中 管理员注册",
+                "consumes": [
+                    "multipart/form-data"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "adminApi"
+                ],
+                "summary": "Post 请求, 发送 Json 数据, 参数在消息体中 管理员注册",
+                "parameters": [
+                    {
+                        "maxLength": 32,
+                        "minLength": 1,
+                        "type": "string",
+                        "description": "要注册的用户名",
+                        "name": "username",
+                        "in": "formData"
+                    },
+                    {
+                        "maxLength": 32,
+                        "minLength": 1,
+                        "type": "string",
+                        "description": "要注册的昵称",
+                        "name": "nickname",
+                        "in": "formData"
+                    },
+                    {
+                        "maxLength": 32,
+                        "minLength": 1,
+                        "type": "string",
+                        "description": "用户密码",
+                        "name": "password",
+                        "in": "formData"
+                    },
+                    {
+                        "maxLength": 32,
+                        "minLength": 1,
+                        "type": "string",
+                        "description": "要注册的个人主页",
+                        "name": "website",
+                        "in": "formData"
+                    },
+                    {
+                        "type": "string",
+                        "description": "要注册的生日",
+                        "name": "birth",
+                        "in": "formData"
+                    },
+                    {
+                        "maxLength": 11,
+                        "minLength": 11,
+                        "type": "string",
+                        "description": "电话号码",
+                        "name": "tel",
+                        "in": "formData"
+                    },
+                    {
+                        "type": "string",
+                        "description": "邮件地址",
+                        "name": "email",
+                        "in": "formData"
+                    },
+                    {
+                        "type": "string",
+                        "description": "所在城市",
+                        "name": "city",
+                        "in": "formData"
+                    },
+                    {
+                        "type": "string",
+                        "description": "毕业院校",
+                        "name": "school",
+                        "in": "formData"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/swagger.HttpOk"
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request",
+                        "schema": {
+                            "$ref": "#/definitions/swagger.Http400"
+                        }
+                    },
+                    "404": {
+                        "description": "Page Not Found",
+                        "schema": {
+                            "$ref": "#/definitions/swagger.Http404"
+                        }
+                    },
+                    "500": {
+                        "description": "InternalError",
+                        "schema": {
+                            "$ref": "#/definitions/swagger.Http500"
+                        }
+                    }
+                }
+            }
+        },
+        "/avatar/UploadAvatar": {
+            "post": {
+                "description": "Post 请求, 发送 表单 数据, 参数在消息体中，上传头像",
+                "consumes": [
+                    "multipart/form-data"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "avatarApi"
+                ],
+                "summary": "Post 请求, 发送 表单 数据, 参数在消息体中，上传头像",
+                "parameters": [
+                    {
+                        "type": "integer",
+                        "description": "注册头像的id",
+                        "name": "id",
+                        "in": "formData"
+                    },
+                    {
+                        "type": "string",
+                        "description": "注册头像的表",
+                        "name": "table",
+                        "in": "formData"
+                    },
+                    {
+                        "type": "file",
+                        "description": "上传头像",
+                        "name": "avatar",
+                        "in": "formData"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/swagger.HttpOk"
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request",
+                        "schema": {
+                            "$ref": "#/definitions/swagger.Http400"
+                        }
+                    },
+                    "404": {
+                        "description": "Page Not Found",
+                        "schema": {
+                            "$ref": "#/definitions/swagger.Http404"
+                        }
+                    },
+                    "500": {
+                        "description": "InternalError",
+                        "schema": {
+                            "$ref": "#/definitions/swagger.Http500"
+                        }
+                    }
+                }
+            }
+        },
         "/example/getAuthorizationHeader": {
             "get": {
                 "description": "Get 请求, 请求参数是 URL 的一部分",
@@ -505,7 +732,7 @@
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/model.User"
+                            "$ref": "#/definitions/blogProject_gen_model.User"
                         }
                     }
                 ],
@@ -570,7 +797,7 @@
                         "schema": {
                             "type": "array",
                             "items": {
-                                "$ref": "#/definitions/model.User"
+                                "$ref": "#/definitions/blogProject_gen_model.User"
                             }
                         }
                     },
@@ -790,46 +1017,154 @@
                     }
                 }
             }
-        }
-    },
-    "definitions": {
-        "ctime.CTime": {
-            "type": "object",
-            "properties": {
-                "time.Time": {
-                    "type": "string"
+        },
+        "/user/UserLogin": {
+            "post": {
+                "description": "Post 请求, 发送 Json 数据, 参数在消息体中 用户登陆",
+                "consumes": [
+                    "multipart/form-data"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "userApi"
+                ],
+                "summary": "Post 请求, 发送 Json 数据, 参数在消息体中 用户登陆",
+                "parameters": [
+                    {
+                        "maxLength": 32,
+                        "minLength": 1,
+                        "type": "string",
+                        "description": "登陆的用户名",
+                        "name": "username",
+                        "in": "formData"
+                    },
+                    {
+                        "maxLength": 32,
+                        "minLength": 1,
+                        "type": "string",
+                        "description": "用户密码",
+                        "name": "password",
+                        "in": "formData"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/swagger.HttpOk"
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request",
+                        "schema": {
+                            "$ref": "#/definitions/swagger.Http400"
+                        }
+                    },
+                    "404": {
+                        "description": "Page Not Found",
+                        "schema": {
+                            "$ref": "#/definitions/swagger.Http404"
+                        }
+                    },
+                    "500": {
+                        "description": "InternalError",
+                        "schema": {
+                            "$ref": "#/definitions/swagger.Http500"
+                        }
+                    }
                 }
             }
         },
-        "model.User": {
+        "/user/UserRegister": {
+            "post": {
+                "description": "Post 请求, 发送 Json 数据, 参数在消息体中 用户注册",
+                "consumes": [
+                    "multipart/form-data"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "userApi"
+                ],
+                "summary": "Post 请求, 发送 Json 数据, 参数在消息体中 用户注册",
+                "parameters": [
+                    {
+                        "maxLength": 32,
+                        "minLength": 1,
+                        "type": "string",
+                        "description": "要注册的用户名",
+                        "name": "username",
+                        "in": "formData"
+                    },
+                    {
+                        "maxLength": 32,
+                        "minLength": 1,
+                        "type": "string",
+                        "description": "用户密码",
+                        "name": "password",
+                        "in": "formData"
+                    },
+                    {
+                        "maxLength": 11,
+                        "minLength": 11,
+                        "type": "string",
+                        "description": "电话号码",
+                        "name": "tel",
+                        "in": "formData"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/swagger.HttpOk"
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request",
+                        "schema": {
+                            "$ref": "#/definitions/swagger.Http400"
+                        }
+                    },
+                    "404": {
+                        "description": "Page Not Found",
+                        "schema": {
+                            "$ref": "#/definitions/swagger.Http404"
+                        }
+                    },
+                    "500": {
+                        "description": "InternalError",
+                        "schema": {
+                            "$ref": "#/definitions/swagger.Http500"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "definitions": {
+        "blogProject_gen_model.User": {
             "type": "object",
             "properties": {
-                "create_time": {
-                    "description": "记录创建时间",
-                    "allOf": [
-                        {
-                            "$ref": "#/definitions/ctime.CTime"
-                        }
-                    ]
+                "avatar": {
+                    "type": "string"
                 },
-                "is_delete": {
-                    "description": "删除",
+                "create_time": {
+                    "type": "string"
+                },
+                "id": {
                     "type": "integer"
                 },
                 "password": {
-                    "description": "密码",
                     "type": "string"
                 },
                 "tel": {
-                    "description": "电话号码",
                     "type": "string"
                 },
-                "user_id": {
-                    "description": "用户 ID",
-                    "type": "integer"
-                },
                 "username": {
-                    "description": "用户名",
                     "type": "string"
                 }
             }

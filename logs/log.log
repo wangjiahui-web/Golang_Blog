@@ -36,3 +36,2481 @@
 [2023-04-28T19:22:45.042+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/favicon-32x32.png	{"status": 200, "method": "GET", "path": "/swagger/favicon-32x32.png", "query": "", "ip": "::1", "errors": "", "cost": "37.251µs"}
 [2023-04-29T14:24:55.750+0800]	[ INFO]	[        blogProject/main.go:87]	3秒超时退出
 [2023-04-29T14:24:55.763+0800]	[ INFO]	[        blogProject/main.go:90]	服务器关闭
+[2023-04-29T16:32:17.184+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/index.html	{"status": 200, "method": "GET", "path": "/swagger/index.html", "query": "", "ip": "::1", "errors": "", "cost": "356.489µs"}
+[2023-04-29T16:32:17.303+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/swagger-ui.css	{"status": 200, "method": "GET", "path": "/swagger/swagger-ui.css", "query": "", "ip": "::1", "errors": "", "cost": "174.86µs"}
+[2023-04-29T16:32:17.307+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/swagger-ui-bundle.js	{"status": 200, "method": "GET", "path": "/swagger/swagger-ui-bundle.js", "query": "", "ip": "::1", "errors": "", "cost": "832.109µs"}
+[2023-04-29T16:32:17.309+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/swagger-ui-standalone-preset.js	{"status": 200, "method": "GET", "path": "/swagger/swagger-ui-standalone-preset.js", "query": "", "ip": "::1", "errors": "", "cost": "256.723µs"}
+[2023-04-29T16:32:17.803+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/doc.json	{"status": 200, "method": "GET", "path": "/swagger/doc.json", "query": "", "ip": "::1", "errors": "", "cost": "262.505µs"}
+[2023-04-29T16:32:17.811+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/favicon-32x32.png	{"status": 200, "method": "GET", "path": "/swagger/favicon-32x32.png", "query": "", "ip": "::1", "errors": "", "cost": "34.133µs"}
+[2023-04-29T16:32:59.354+0800]	[ INFO]	[    service/user_service.go:16]	用户注册接收到的密码为:wang0909
+
+[2023-04-29T16:32:59.354+0800]	[ INFO]	[    service/user_service.go:18]	开始对明文密码进行加密, 明文密码为: wang0909
+
+[2023-04-29T16:32:59.430+0800]	[ INFO]	[    service/user_service.go:20]	加密之后的密码为: $2a$10$EtwejHv7bQuxh4W32IWElOFiqyfOjFIvM2.8h9fbyXacNFwiyqdK6
+
+[2023-04-29T16:32:59.465+0800]	[DEBUG]	[   zaplogger/gorm_logger.go:96]	info	{"elapsedTime": "34.660173ms", "rowsAffected": 1, "sql": "INSERT INTO `user` (`username`,`password`,`tel`,`avatar`) VALUES ('王家辉','$2a$10$EtwejHv7bQuxh4W32IWElOFiqyfOjFIvM2.8h9fbyXacNFwiyqdK6','13149508638',NULL)"}
+[2023-04-29T16:32:59.465+0800]	[ INFO]	[       middleware/logger.go:26]	/user/UserRegister	{"status": 200, "method": "POST", "path": "/user/UserRegister", "query": "", "ip": "::1", "errors": "", "cost": "111.538356ms"}
+[2023-04-29T17:27:25.675+0800]	[ INFO]	[        blogProject/main.go:87]	3秒超时退出
+[2023-04-29T17:27:25.678+0800]	[ INFO]	[        blogProject/main.go:90]	服务器关闭
+[2023-04-29T17:28:19.241+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/index.html	{"status": 200, "method": "GET", "path": "/swagger/index.html", "query": "", "ip": "::1", "errors": "", "cost": "564.787µs"}
+[2023-04-29T17:28:19.283+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/swagger-ui.css	{"status": 200, "method": "GET", "path": "/swagger/swagger-ui.css", "query": "", "ip": "::1", "errors": "", "cost": "217.121µs"}
+[2023-04-29T17:28:19.284+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/swagger-ui-bundle.js	{"status": 200, "method": "GET", "path": "/swagger/swagger-ui-bundle.js", "query": "", "ip": "::1", "errors": "", "cost": "747.741µs"}
+[2023-04-29T17:28:19.287+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/swagger-ui-standalone-preset.js	{"status": 200, "method": "GET", "path": "/swagger/swagger-ui-standalone-preset.js", "query": "", "ip": "::1", "errors": "", "cost": "295.461µs"}
+[2023-04-29T17:28:19.559+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/doc.json	{"status": 200, "method": "GET", "path": "/swagger/doc.json", "query": "", "ip": "::1", "errors": "", "cost": "439.167µs"}
+[2023-04-29T17:28:19.584+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/favicon-32x32.png	{"status": 200, "method": "GET", "path": "/swagger/favicon-32x32.png", "query": "", "ip": "::1", "errors": "", "cost": "111.046µs"}
+[2023-04-29T17:28:42.949+0800]	[ERROR]	[            api/user_api.go:67]	绑定参数失败: Tel:Key: 'RegisterParam.Tel' Error:Field validation for 'Tel' failed on the 'alphanum' tag; 
+
+blogProject/internal/api.userApi.UserLogin
+	/Users/apple/Study/golang/blogProject/internal/api/user_api.go:67
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+blogProject/internal/router/middleware.ZapLoggerMiddleware.func1
+	/Users/apple/Study/golang/blogProject/internal/router/middleware/logger.go:21
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2947
+net/http.(*conn).serve
+	/usr/local/go/src/net/http/server.go:1991
+[2023-04-29T17:28:42.949+0800]	[ INFO]	[       middleware/logger.go:26]	/user/UserLogin	{"status": 500, "method": "POST", "path": "/user/UserLogin", "query": "", "ip": "::1", "errors": "", "cost": "657.376µs"}
+[2023-04-29T17:31:41.887+0800]	[ INFO]	[        blogProject/main.go:87]	3秒超时退出
+[2023-04-29T17:31:41.889+0800]	[ INFO]	[        blogProject/main.go:90]	服务器关闭
+[2023-04-29T17:31:54.272+0800]	[ INFO]	[    service/user_service.go:44]	用户登录前端传递过来的密码为: wang0909
+[2023-04-29T17:31:54.293+0800]	[DEBUG]	[   zaplogger/gorm_logger.go:96]	info	{"elapsedTime": "19.314723ms", "rowsAffected": 1, "sql": "SELECT * FROM `User` WHERE username='王家辉' ORDER BY `User`.`id` LIMIT 1"}
+[2023-04-29T17:31:54.293+0800]	[ INFO]	[    service/user_service.go:58]	从数据库中获取的用户密码为:$2a$10$EtwejHv7bQuxh4W32IWElOFiqyfOjFIvM2.8h9fbyXacNFwiyqdK6
+[2023-04-29T17:31:54.293+0800]	[ INFO]	[    service/user_service.go:59]	接收到的前端用户用户密码为:wang0909
+[2023-04-29T17:31:54.367+0800]	[ERROR]	[    service/user_service.go:71]	根据用户名生成 token 失败: key is of invalid type
+
+blogProject/internal/service.userService.UserLogin
+	/Users/apple/Study/golang/blogProject/internal/service/user_service.go:71
+blogProject/internal/api.userApi.UserLogin
+	/Users/apple/Study/golang/blogProject/internal/api/user_api.go:71
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+blogProject/internal/router/middleware.ZapLoggerMiddleware.func1
+	/Users/apple/Study/golang/blogProject/internal/router/middleware/logger.go:21
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2947
+net/http.(*conn).serve
+	/usr/local/go/src/net/http/server.go:1991
+[2023-04-29T17:31:54.368+0800]	[ERROR]	[            api/user_api.go:73]	注册用户失败: key is of invalid type
+
+blogProject/internal/api.userApi.UserLogin
+	/Users/apple/Study/golang/blogProject/internal/api/user_api.go:73
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+blogProject/internal/router/middleware.ZapLoggerMiddleware.func1
+	/Users/apple/Study/golang/blogProject/internal/router/middleware/logger.go:21
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2947
+net/http.(*conn).serve
+	/usr/local/go/src/net/http/server.go:1991
+[2023-04-29T17:31:54.368+0800]	[ INFO]	[       middleware/logger.go:26]	/user/UserLogin	{"status": 500, "method": "POST", "path": "/user/UserLogin", "query": "", "ip": "::1", "errors": "", "cost": "95.778052ms"}
+[2023-04-29T17:34:46.167+0800]	[ INFO]	[        blogProject/main.go:87]	3秒超时退出
+[2023-04-29T17:34:46.168+0800]	[ INFO]	[        blogProject/main.go:90]	服务器关闭
+[2023-04-29T17:34:54.822+0800]	[ INFO]	[    service/user_service.go:44]	用户登录前端传递过来的密码为: wang0909
+[2023-04-29T17:34:54.829+0800]	[DEBUG]	[   zaplogger/gorm_logger.go:96]	info	{"elapsedTime": "6.056727ms", "rowsAffected": 1, "sql": "SELECT * FROM `User` WHERE username='王家辉' ORDER BY `User`.`id` LIMIT 1"}
+[2023-04-29T17:34:54.829+0800]	[ INFO]	[    service/user_service.go:58]	从数据库中获取的用户密码为:$2a$10$EtwejHv7bQuxh4W32IWElOFiqyfOjFIvM2.8h9fbyXacNFwiyqdK6
+[2023-04-29T17:34:54.829+0800]	[ INFO]	[    service/user_service.go:59]	接收到的前端用户用户密码为:wang0909
+[2023-04-29T17:34:54.905+0800]	[ERROR]	[    service/user_service.go:71]	根据用户名生成 token 失败: key is of invalid type
+
+blogProject/internal/service.userService.UserLogin
+	/Users/apple/Study/golang/blogProject/internal/service/user_service.go:71
+blogProject/internal/api.userApi.UserLogin
+	/Users/apple/Study/golang/blogProject/internal/api/user_api.go:71
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+blogProject/internal/router/middleware.ZapLoggerMiddleware.func1
+	/Users/apple/Study/golang/blogProject/internal/router/middleware/logger.go:21
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2947
+net/http.(*conn).serve
+	/usr/local/go/src/net/http/server.go:1991
+[2023-04-29T17:34:54.906+0800]	[ERROR]	[            api/user_api.go:73]	用户登陆失败: key is of invalid type
+
+blogProject/internal/api.userApi.UserLogin
+	/Users/apple/Study/golang/blogProject/internal/api/user_api.go:73
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+blogProject/internal/router/middleware.ZapLoggerMiddleware.func1
+	/Users/apple/Study/golang/blogProject/internal/router/middleware/logger.go:21
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2947
+net/http.(*conn).serve
+	/usr/local/go/src/net/http/server.go:1991
+[2023-04-29T17:34:54.906+0800]	[ INFO]	[       middleware/logger.go:26]	/user/UserLogin	{"status": 500, "method": "POST", "path": "/user/UserLogin", "query": "", "ip": "::1", "errors": "", "cost": "83.57593ms"}
+[2023-04-29T17:37:22.960+0800]	[ INFO]	[        blogProject/main.go:87]	3秒超时退出
+[2023-04-29T17:37:22.961+0800]	[ INFO]	[        blogProject/main.go:90]	服务器关闭
+[2023-04-29T17:37:33.959+0800]	[ INFO]	[    service/user_service.go:44]	用户登录前端传递过来的密码为: wang0909
+[2023-04-29T17:37:33.963+0800]	[DEBUG]	[   zaplogger/gorm_logger.go:96]	info	{"elapsedTime": "3.920146ms", "rowsAffected": 1, "sql": "SELECT * FROM `User` WHERE username='王家辉' ORDER BY `User`.`id` LIMIT 1"}
+[2023-04-29T17:37:33.963+0800]	[ INFO]	[    service/user_service.go:58]	从数据库中获取的用户密码为:$2a$10$EtwejHv7bQuxh4W32IWElOFiqyfOjFIvM2.8h9fbyXacNFwiyqdK6
+[2023-04-29T17:37:33.964+0800]	[ INFO]	[    service/user_service.go:59]	接收到的前端用户用户密码为:wang0909
+[2023-04-29T17:37:34.040+0800]	[ERROR]	[    service/user_service.go:71]	根据用户名生成 token 失败: key is of invalid type
+
+blogProject/internal/service.userService.UserLogin
+	/Users/apple/Study/golang/blogProject/internal/service/user_service.go:71
+blogProject/internal/api.userApi.UserLogin
+	/Users/apple/Study/golang/blogProject/internal/api/user_api.go:71
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+blogProject/internal/router/middleware.ZapLoggerMiddleware.func1
+	/Users/apple/Study/golang/blogProject/internal/router/middleware/logger.go:21
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2947
+net/http.(*conn).serve
+	/usr/local/go/src/net/http/server.go:1991
+[2023-04-29T17:37:34.040+0800]	[ERROR]	[            api/user_api.go:73]	用户登陆失败: key is of invalid type
+
+blogProject/internal/api.userApi.UserLogin
+	/Users/apple/Study/golang/blogProject/internal/api/user_api.go:73
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+blogProject/internal/router/middleware.ZapLoggerMiddleware.func1
+	/Users/apple/Study/golang/blogProject/internal/router/middleware/logger.go:21
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2947
+net/http.(*conn).serve
+	/usr/local/go/src/net/http/server.go:1991
+[2023-04-29T17:37:34.041+0800]	[ INFO]	[       middleware/logger.go:26]	/user/UserLogin	{"status": 500, "method": "POST", "path": "/user/UserLogin", "query": "", "ip": "::1", "errors": "", "cost": "81.758096ms"}
+[2023-04-29T17:37:35.624+0800]	[ INFO]	[    service/user_service.go:44]	用户登录前端传递过来的密码为: wang0909
+[2023-04-29T17:37:35.626+0800]	[DEBUG]	[   zaplogger/gorm_logger.go:96]	info	{"elapsedTime": "2.442191ms", "rowsAffected": 1, "sql": "SELECT * FROM `User` WHERE username='王家辉' ORDER BY `User`.`id` LIMIT 1"}
+[2023-04-29T17:37:35.626+0800]	[ INFO]	[    service/user_service.go:58]	从数据库中获取的用户密码为:$2a$10$EtwejHv7bQuxh4W32IWElOFiqyfOjFIvM2.8h9fbyXacNFwiyqdK6
+[2023-04-29T17:37:35.626+0800]	[ INFO]	[    service/user_service.go:59]	接收到的前端用户用户密码为:wang0909
+[2023-04-29T17:37:35.703+0800]	[ERROR]	[    service/user_service.go:71]	根据用户名生成 token 失败: key is of invalid type
+
+blogProject/internal/service.userService.UserLogin
+	/Users/apple/Study/golang/blogProject/internal/service/user_service.go:71
+blogProject/internal/api.userApi.UserLogin
+	/Users/apple/Study/golang/blogProject/internal/api/user_api.go:71
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+blogProject/internal/router/middleware.ZapLoggerMiddleware.func1
+	/Users/apple/Study/golang/blogProject/internal/router/middleware/logger.go:21
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2947
+net/http.(*conn).serve
+	/usr/local/go/src/net/http/server.go:1991
+[2023-04-29T17:37:35.704+0800]	[ERROR]	[            api/user_api.go:73]	用户登陆失败: key is of invalid type
+
+blogProject/internal/api.userApi.UserLogin
+	/Users/apple/Study/golang/blogProject/internal/api/user_api.go:73
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+blogProject/internal/router/middleware.ZapLoggerMiddleware.func1
+	/Users/apple/Study/golang/blogProject/internal/router/middleware/logger.go:21
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2947
+net/http.(*conn).serve
+	/usr/local/go/src/net/http/server.go:1991
+[2023-04-29T17:37:35.704+0800]	[ INFO]	[       middleware/logger.go:26]	/user/UserLogin	{"status": 500, "method": "POST", "path": "/user/UserLogin", "query": "", "ip": "::1", "errors": "", "cost": "79.968608ms"}
+[2023-04-29T17:38:11.437+0800]	[ INFO]	[        blogProject/main.go:87]	3秒超时退出
+[2023-04-29T17:38:11.438+0800]	[ INFO]	[        blogProject/main.go:90]	服务器关闭
+[2023-04-29T17:40:45.939+0800]	[ INFO]	[        blogProject/main.go:87]	3秒超时退出
+[2023-04-29T17:40:45.939+0800]	[ INFO]	[        blogProject/main.go:90]	服务器关闭
+[2023-04-29T17:40:53.060+0800]	[ INFO]	[    service/user_service.go:45]	用户登录前端传递过来的密码为: wang0909
+[2023-04-29T17:40:53.065+0800]	[DEBUG]	[   zaplogger/gorm_logger.go:96]	info	{"elapsedTime": "4.456637ms", "rowsAffected": 1, "sql": "SELECT * FROM `User` WHERE username='王家辉' ORDER BY `User`.`id` LIMIT 1"}
+[2023-04-29T17:40:53.065+0800]	[ INFO]	[    service/user_service.go:59]	从数据库中获取的用户密码为:$2a$10$EtwejHv7bQuxh4W32IWElOFiqyfOjFIvM2.8h9fbyXacNFwiyqdK6
+[2023-04-29T17:40:53.065+0800]	[ INFO]	[    service/user_service.go:60]	接收到的前端用户用户密码为:wang0909
+[2023-04-29T17:40:53.141+0800]	[ERROR]	[    service/user_service.go:75]	根据用户名生成 token 失败: key is of invalid type
+
+blogProject/internal/service.userService.UserLogin
+	/Users/apple/Study/golang/blogProject/internal/service/user_service.go:75
+blogProject/internal/api.userApi.UserLogin
+	/Users/apple/Study/golang/blogProject/internal/api/user_api.go:71
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+blogProject/internal/router/middleware.ZapLoggerMiddleware.func1
+	/Users/apple/Study/golang/blogProject/internal/router/middleware/logger.go:21
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2947
+net/http.(*conn).serve
+	/usr/local/go/src/net/http/server.go:1991
+[2023-04-29T17:40:53.141+0800]	[ERROR]	[            api/user_api.go:73]	用户登陆失败: key is of invalid type
+
+blogProject/internal/api.userApi.UserLogin
+	/Users/apple/Study/golang/blogProject/internal/api/user_api.go:73
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+blogProject/internal/router/middleware.ZapLoggerMiddleware.func1
+	/Users/apple/Study/golang/blogProject/internal/router/middleware/logger.go:21
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2947
+net/http.(*conn).serve
+	/usr/local/go/src/net/http/server.go:1991
+[2023-04-29T17:40:53.141+0800]	[ INFO]	[       middleware/logger.go:26]	/user/UserLogin	{"status": 500, "method": "POST", "path": "/user/UserLogin", "query": "", "ip": "::1", "errors": "", "cost": "81.270406ms"}
+[2023-04-29T17:41:25.178+0800]	[ INFO]	[        blogProject/main.go:87]	3秒超时退出
+[2023-04-29T17:41:25.178+0800]	[ INFO]	[        blogProject/main.go:90]	服务器关闭
+[2023-04-29T17:41:31.407+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/index.html	{"status": 200, "method": "GET", "path": "/swagger/index.html", "query": "", "ip": "::1", "errors": "", "cost": "822.752µs"}
+[2023-04-29T17:41:31.438+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/swagger-ui.css	{"status": 200, "method": "GET", "path": "/swagger/swagger-ui.css", "query": "", "ip": "::1", "errors": "", "cost": "175.577µs"}
+[2023-04-29T17:41:31.443+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/swagger-ui-bundle.js	{"status": 200, "method": "GET", "path": "/swagger/swagger-ui-bundle.js", "query": "", "ip": "::1", "errors": "", "cost": "1.48647ms"}
+[2023-04-29T17:41:31.443+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/swagger-ui-standalone-preset.js	{"status": 200, "method": "GET", "path": "/swagger/swagger-ui-standalone-preset.js", "query": "", "ip": "::1", "errors": "", "cost": "261.576µs"}
+[2023-04-29T17:41:31.665+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/doc.json	{"status": 200, "method": "GET", "path": "/swagger/doc.json", "query": "", "ip": "::1", "errors": "", "cost": "268.947µs"}
+[2023-04-29T17:41:31.727+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/favicon-32x32.png	{"status": 200, "method": "GET", "path": "/swagger/favicon-32x32.png", "query": "", "ip": "::1", "errors": "", "cost": "33.667µs"}
+[2023-04-29T17:41:52.406+0800]	[ INFO]	[    service/user_service.go:45]	用户登录前端传递过来的密码为: wang0909
+[2023-04-29T17:41:52.410+0800]	[DEBUG]	[   zaplogger/gorm_logger.go:96]	info	{"elapsedTime": "3.483937ms", "rowsAffected": 1, "sql": "SELECT * FROM `User` WHERE username='王家辉' ORDER BY `User`.`id` LIMIT 1"}
+[2023-04-29T17:41:52.410+0800]	[ INFO]	[    service/user_service.go:59]	从数据库中获取的用户密码为:$2a$10$EtwejHv7bQuxh4W32IWElOFiqyfOjFIvM2.8h9fbyXacNFwiyqdK6
+[2023-04-29T17:41:52.410+0800]	[ INFO]	[    service/user_service.go:60]	接收到的前端用户用户密码为:wang0909
+[2023-04-29T17:41:52.485+0800]	[ERROR]	[    service/user_service.go:76]	根据用户名生成 token 失败: key is of invalid type
+
+blogProject/internal/service.userService.UserLogin
+	/Users/apple/Study/golang/blogProject/internal/service/user_service.go:76
+blogProject/internal/api.userApi.UserLogin
+	/Users/apple/Study/golang/blogProject/internal/api/user_api.go:71
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+blogProject/internal/router/middleware.ZapLoggerMiddleware.func1
+	/Users/apple/Study/golang/blogProject/internal/router/middleware/logger.go:21
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2947
+net/http.(*conn).serve
+	/usr/local/go/src/net/http/server.go:1991
+[2023-04-29T17:41:52.485+0800]	[ERROR]	[            api/user_api.go:73]	用户登陆失败: key is of invalid type
+
+blogProject/internal/api.userApi.UserLogin
+	/Users/apple/Study/golang/blogProject/internal/api/user_api.go:73
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+blogProject/internal/router/middleware.ZapLoggerMiddleware.func1
+	/Users/apple/Study/golang/blogProject/internal/router/middleware/logger.go:21
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2947
+net/http.(*conn).serve
+	/usr/local/go/src/net/http/server.go:1991
+[2023-04-29T17:41:52.485+0800]	[ INFO]	[       middleware/logger.go:26]	/user/UserLogin	{"status": 500, "method": "POST", "path": "/user/UserLogin", "query": "", "ip": "::1", "errors": "", "cost": "78.931186ms"}
+[2023-04-29T17:48:23.115+0800]	[ INFO]	[        blogProject/main.go:87]	3秒超时退出
+[2023-04-29T17:48:23.115+0800]	[ INFO]	[        blogProject/main.go:90]	服务器关闭
+[2023-04-29T17:48:37.390+0800]	[ INFO]	[    service/user_service.go:45]	用户登录前端传递过来的密码为: wang0909
+[2023-04-29T17:48:37.396+0800]	[DEBUG]	[   zaplogger/gorm_logger.go:96]	info	{"elapsedTime": "5.781844ms", "rowsAffected": 1, "sql": "SELECT * FROM `User` WHERE username='王家辉' ORDER BY `User`.`id` LIMIT 1"}
+[2023-04-29T17:48:37.396+0800]	[ INFO]	[    service/user_service.go:59]	从数据库中获取的用户密码为:$2a$10$EtwejHv7bQuxh4W32IWElOFiqyfOjFIvM2.8h9fbyXacNFwiyqdK6
+[2023-04-29T17:48:37.396+0800]	[ INFO]	[    service/user_service.go:60]	接收到的前端用户用户密码为:wang0909
+[2023-04-29T17:48:37.478+0800]	[ INFO]	[       middleware/logger.go:26]	/user/UserLogin	{"status": 200, "method": "POST", "path": "/user/UserLogin", "query": "", "ip": "::1", "errors": "", "cost": "88.356913ms"}
+[2023-04-29T18:43:51.971+0800]	[ INFO]	[        blogProject/main.go:87]	3秒超时退出
+[2023-04-29T18:43:51.973+0800]	[ INFO]	[        blogProject/main.go:90]	服务器关闭
+[2023-04-29T18:44:06.714+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/index.html	{"status": 200, "method": "GET", "path": "/swagger/index.html", "query": "", "ip": "::1", "errors": "", "cost": "592.964µs"}
+[2023-04-29T18:44:06.775+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/swagger-ui.css	{"status": 200, "method": "GET", "path": "/swagger/swagger-ui.css", "query": "", "ip": "::1", "errors": "", "cost": "183.406µs"}
+[2023-04-29T18:44:06.780+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/swagger-ui-bundle.js	{"status": 200, "method": "GET", "path": "/swagger/swagger-ui-bundle.js", "query": "", "ip": "::1", "errors": "", "cost": "1.433413ms"}
+[2023-04-29T18:44:06.780+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/swagger-ui-standalone-preset.js	{"status": 200, "method": "GET", "path": "/swagger/swagger-ui-standalone-preset.js", "query": "", "ip": "::1", "errors": "", "cost": "418.192µs"}
+[2023-04-29T18:44:07.111+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/doc.json	{"status": 200, "method": "GET", "path": "/swagger/doc.json", "query": "", "ip": "::1", "errors": "", "cost": "457.216µs"}
+[2023-04-29T18:44:07.125+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/favicon-32x32.png	{"status": 200, "method": "GET", "path": "/swagger/favicon-32x32.png", "query": "", "ip": "::1", "errors": "", "cost": "40.693µs"}
+[2023-04-29T18:44:13.326+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/index.html	{"status": 200, "method": "GET", "path": "/swagger/index.html", "query": "", "ip": "::1", "errors": "", "cost": "119.214µs"}
+[2023-04-29T18:44:13.341+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/swagger-ui.css	{"status": 304, "method": "GET", "path": "/swagger/swagger-ui.css", "query": "", "ip": "::1", "errors": "", "cost": "29.23µs"}
+[2023-04-29T18:44:13.342+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/swagger-ui-bundle.js	{"status": 304, "method": "GET", "path": "/swagger/swagger-ui-bundle.js", "query": "", "ip": "::1", "errors": "", "cost": "29.513µs"}
+[2023-04-29T18:44:13.343+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/swagger-ui-standalone-preset.js	{"status": 304, "method": "GET", "path": "/swagger/swagger-ui-standalone-preset.js", "query": "", "ip": "::1", "errors": "", "cost": "61.248µs"}
+[2023-04-29T18:44:13.485+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/doc.json	{"status": 200, "method": "GET", "path": "/swagger/doc.json", "query": "", "ip": "::1", "errors": "", "cost": "216.763µs"}
+[2023-04-29T18:44:13.489+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/favicon-32x32.png	{"status": 304, "method": "GET", "path": "/swagger/favicon-32x32.png", "query": "", "ip": "::1", "errors": "", "cost": "23.405µs"}
+[2023-04-29T18:44:27.322+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/index.html	{"status": 200, "method": "GET", "path": "/swagger/index.html", "query": "", "ip": "::1", "errors": "", "cost": "74.718µs"}
+[2023-04-29T18:44:27.335+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/swagger-ui-bundle.js	{"status": 304, "method": "GET", "path": "/swagger/swagger-ui-bundle.js", "query": "", "ip": "::1", "errors": "", "cost": "46.279µs"}
+[2023-04-29T18:44:27.337+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/swagger-ui-standalone-preset.js	{"status": 304, "method": "GET", "path": "/swagger/swagger-ui-standalone-preset.js", "query": "", "ip": "::1", "errors": "", "cost": "30.977µs"}
+[2023-04-29T18:44:27.337+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/swagger-ui.css	{"status": 304, "method": "GET", "path": "/swagger/swagger-ui.css", "query": "", "ip": "::1", "errors": "", "cost": "9.241µs"}
+[2023-04-29T18:44:27.437+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/doc.json	{"status": 200, "method": "GET", "path": "/swagger/doc.json", "query": "", "ip": "::1", "errors": "", "cost": "257.483µs"}
+[2023-04-29T18:44:27.444+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/favicon-32x32.png	{"status": 304, "method": "GET", "path": "/swagger/favicon-32x32.png", "query": "", "ip": "::1", "errors": "", "cost": "27.205µs"}
+[2023-04-29T18:44:39.377+0800]	[ INFO]	[        blogProject/main.go:87]	3秒超时退出
+[2023-04-29T18:44:39.377+0800]	[ INFO]	[        blogProject/main.go:90]	服务器关闭
+[2023-04-29T18:44:55.144+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/index.html	{"status": 200, "method": "GET", "path": "/swagger/index.html", "query": "", "ip": "::1", "errors": "", "cost": "628.657µs"}
+[2023-04-29T18:44:55.160+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/swagger-ui.css	{"status": 200, "method": "GET", "path": "/swagger/swagger-ui.css", "query": "", "ip": "::1", "errors": "", "cost": "235.287µs"}
+[2023-04-29T18:44:55.161+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/swagger-ui-bundle.js	{"status": 200, "method": "GET", "path": "/swagger/swagger-ui-bundle.js", "query": "", "ip": "::1", "errors": "", "cost": "914.772µs"}
+[2023-04-29T18:44:55.163+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/swagger-ui-standalone-preset.js	{"status": 200, "method": "GET", "path": "/swagger/swagger-ui-standalone-preset.js", "query": "", "ip": "::1", "errors": "", "cost": "232.126µs"}
+[2023-04-29T18:44:55.269+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/doc.json	{"status": 200, "method": "GET", "path": "/swagger/doc.json", "query": "", "ip": "::1", "errors": "", "cost": "458.536µs"}
+[2023-04-29T18:44:55.276+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/favicon-32x32.png	{"status": 200, "method": "GET", "path": "/swagger/favicon-32x32.png", "query": "", "ip": "::1", "errors": "", "cost": "42.364µs"}
+[2023-04-29T18:45:31.415+0800]	[ERROR]	[    service/user_service.go:99]	保存身份证正面失败: open ./uploads/%!d(string=20230429184531).jpeg: no such file or directory
+
+blogProject/internal/service.userService.UploadAvatar
+	/Users/apple/Study/golang/blogProject/internal/service/user_service.go:99
+blogProject/internal/api.userApi.UploadAvatar
+	/Users/apple/Study/golang/blogProject/internal/api/user_api.go:96
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+blogProject/internal/router/middleware.ZapLoggerMiddleware.func1
+	/Users/apple/Study/golang/blogProject/internal/router/middleware/logger.go:21
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2947
+net/http.(*conn).serve
+	/usr/local/go/src/net/http/server.go:1991
+[2023-04-29T18:45:31.415+0800]	[ERROR]	[            api/user_api.go:98]	用户登陆失败: open ./uploads/%!d(string=20230429184531).jpeg: no such file or directory
+
+blogProject/internal/api.userApi.UploadAvatar
+	/Users/apple/Study/golang/blogProject/internal/api/user_api.go:98
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+blogProject/internal/router/middleware.ZapLoggerMiddleware.func1
+	/Users/apple/Study/golang/blogProject/internal/router/middleware/logger.go:21
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2947
+net/http.(*conn).serve
+	/usr/local/go/src/net/http/server.go:1991
+[2023-04-29T18:45:31.415+0800]	[ INFO]	[       middleware/logger.go:26]	/user/UploadAvatar	{"status": 500, "method": "POST", "path": "/user/UploadAvatar", "query": "", "ip": "::1", "errors": "", "cost": "4.089665ms"}
+[2023-04-29T18:47:08.840+0800]	[ INFO]	[        blogProject/main.go:87]	3秒超时退出
+[2023-04-29T18:47:08.841+0800]	[ INFO]	[        blogProject/main.go:90]	服务器关闭
+[2023-04-29T18:47:26.045+0800]	[ERROR]	[    service/user_service.go:99]	保存头像失败: open ./uploads/%!d(string=20230429184726).jpeg: no such file or directory
+
+blogProject/internal/service.userService.UploadAvatar
+	/Users/apple/Study/golang/blogProject/internal/service/user_service.go:99
+blogProject/internal/api.userApi.UploadAvatar
+	/Users/apple/Study/golang/blogProject/internal/api/user_api.go:96
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+blogProject/internal/router/middleware.ZapLoggerMiddleware.func1
+	/Users/apple/Study/golang/blogProject/internal/router/middleware/logger.go:21
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2947
+net/http.(*conn).serve
+	/usr/local/go/src/net/http/server.go:1991
+[2023-04-29T18:47:26.045+0800]	[ERROR]	[            api/user_api.go:98]	上传头像失败: open ./uploads/%!d(string=20230429184726).jpeg: no such file or directory
+
+blogProject/internal/api.userApi.UploadAvatar
+	/Users/apple/Study/golang/blogProject/internal/api/user_api.go:98
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+blogProject/internal/router/middleware.ZapLoggerMiddleware.func1
+	/Users/apple/Study/golang/blogProject/internal/router/middleware/logger.go:21
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2947
+net/http.(*conn).serve
+	/usr/local/go/src/net/http/server.go:1991
+[2023-04-29T18:47:26.046+0800]	[ INFO]	[       middleware/logger.go:26]	/user/UploadAvatar	{"status": 500, "method": "POST", "path": "/user/UploadAvatar", "query": "", "ip": "::1", "errors": "", "cost": "6.871054ms"}
+[2023-04-29T18:50:51.294+0800]	[ INFO]	[        blogProject/main.go:87]	3秒超时退出
+[2023-04-29T18:50:51.296+0800]	[ INFO]	[        blogProject/main.go:90]	服务器关闭
+[2023-04-29T18:51:04.356+0800]	[ERROR]	[    service/user_service.go:99]	保存头像失败: open ./uploads/%!d(string=20230429185104).jpeg: no such file or directory
+
+blogProject/internal/service.userService.UploadAvatar
+	/Users/apple/Study/golang/blogProject/internal/service/user_service.go:99
+blogProject/internal/api.userApi.UploadAvatar
+	/Users/apple/Study/golang/blogProject/internal/api/user_api.go:96
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+blogProject/internal/router/middleware.ZapLoggerMiddleware.func1
+	/Users/apple/Study/golang/blogProject/internal/router/middleware/logger.go:21
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2947
+net/http.(*conn).serve
+	/usr/local/go/src/net/http/server.go:1991
+[2023-04-29T18:51:04.356+0800]	[ERROR]	[            api/user_api.go:98]	上传头像失败: open ./uploads/%!d(string=20230429185104).jpeg: no such file or directory
+
+blogProject/internal/api.userApi.UploadAvatar
+	/Users/apple/Study/golang/blogProject/internal/api/user_api.go:98
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+blogProject/internal/router/middleware.ZapLoggerMiddleware.func1
+	/Users/apple/Study/golang/blogProject/internal/router/middleware/logger.go:21
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2947
+net/http.(*conn).serve
+	/usr/local/go/src/net/http/server.go:1991
+[2023-04-29T18:51:04.357+0800]	[ INFO]	[       middleware/logger.go:26]	/user/UploadAvatar	{"status": 500, "method": "POST", "path": "/user/UploadAvatar", "query": "", "ip": "::1", "errors": "", "cost": "3.711527ms"}
+[2023-04-29T18:51:07.429+0800]	[ERROR]	[    service/user_service.go:99]	保存头像失败: open ./uploads/%!d(string=20230429185107).jpeg: no such file or directory
+
+blogProject/internal/service.userService.UploadAvatar
+	/Users/apple/Study/golang/blogProject/internal/service/user_service.go:99
+blogProject/internal/api.userApi.UploadAvatar
+	/Users/apple/Study/golang/blogProject/internal/api/user_api.go:96
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+blogProject/internal/router/middleware.ZapLoggerMiddleware.func1
+	/Users/apple/Study/golang/blogProject/internal/router/middleware/logger.go:21
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2947
+net/http.(*conn).serve
+	/usr/local/go/src/net/http/server.go:1991
+[2023-04-29T18:51:07.429+0800]	[ERROR]	[            api/user_api.go:98]	上传头像失败: open ./uploads/%!d(string=20230429185107).jpeg: no such file or directory
+
+blogProject/internal/api.userApi.UploadAvatar
+	/Users/apple/Study/golang/blogProject/internal/api/user_api.go:98
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+blogProject/internal/router/middleware.ZapLoggerMiddleware.func1
+	/Users/apple/Study/golang/blogProject/internal/router/middleware/logger.go:21
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2947
+net/http.(*conn).serve
+	/usr/local/go/src/net/http/server.go:1991
+[2023-04-29T18:51:07.429+0800]	[ INFO]	[       middleware/logger.go:26]	/user/UploadAvatar	{"status": 500, "method": "POST", "path": "/user/UploadAvatar", "query": "", "ip": "::1", "errors": "", "cost": "801.201µs"}
+[2023-04-29T18:53:26.607+0800]	[ INFO]	[        blogProject/main.go:87]	3秒超时退出
+[2023-04-29T18:53:26.608+0800]	[ INFO]	[        blogProject/main.go:90]	服务器关闭
+[2023-04-29T18:54:59.408+0800]	[ INFO]	[        blogProject/main.go:87]	3秒超时退出
+[2023-04-29T18:54:59.409+0800]	[ INFO]	[        blogProject/main.go:90]	服务器关闭
+[2023-04-29T18:55:06.928+0800]	[ERROR]	[    service/user_service.go:99]	保存头像失败: open ./uploads/%!d(string=20230429185506).jpeg: no such file or directory
+
+blogProject/internal/service.userService.UploadAvatar
+	/Users/apple/Study/golang/blogProject/internal/service/user_service.go:99
+blogProject/internal/api.userApi.UploadAvatar
+	/Users/apple/Study/golang/blogProject/internal/api/user_api.go:96
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+blogProject/internal/router/middleware.ZapLoggerMiddleware.func1
+	/Users/apple/Study/golang/blogProject/internal/router/middleware/logger.go:21
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2947
+net/http.(*conn).serve
+	/usr/local/go/src/net/http/server.go:1991
+[2023-04-29T18:55:06.928+0800]	[ERROR]	[            api/user_api.go:98]	上传头像失败: open ./uploads/%!d(string=20230429185506).jpeg: no such file or directory
+
+blogProject/internal/api.userApi.UploadAvatar
+	/Users/apple/Study/golang/blogProject/internal/api/user_api.go:98
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+blogProject/internal/router/middleware.ZapLoggerMiddleware.func1
+	/Users/apple/Study/golang/blogProject/internal/router/middleware/logger.go:21
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2947
+net/http.(*conn).serve
+	/usr/local/go/src/net/http/server.go:1991
+[2023-04-29T18:55:06.928+0800]	[ INFO]	[       middleware/logger.go:26]	/user/UploadAvatar	{"status": 500, "method": "POST", "path": "/user/UploadAvatar", "query": "", "ip": "::1", "errors": "", "cost": "1.625464ms"}
+[2023-04-29T18:55:07.677+0800]	[ERROR]	[    service/user_service.go:99]	保存头像失败: open ./uploads/%!d(string=20230429185507).jpeg: no such file or directory
+
+blogProject/internal/service.userService.UploadAvatar
+	/Users/apple/Study/golang/blogProject/internal/service/user_service.go:99
+blogProject/internal/api.userApi.UploadAvatar
+	/Users/apple/Study/golang/blogProject/internal/api/user_api.go:96
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+blogProject/internal/router/middleware.ZapLoggerMiddleware.func1
+	/Users/apple/Study/golang/blogProject/internal/router/middleware/logger.go:21
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2947
+net/http.(*conn).serve
+	/usr/local/go/src/net/http/server.go:1991
+[2023-04-29T18:55:07.677+0800]	[ERROR]	[            api/user_api.go:98]	上传头像失败: open ./uploads/%!d(string=20230429185507).jpeg: no such file or directory
+
+blogProject/internal/api.userApi.UploadAvatar
+	/Users/apple/Study/golang/blogProject/internal/api/user_api.go:98
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+blogProject/internal/router/middleware.ZapLoggerMiddleware.func1
+	/Users/apple/Study/golang/blogProject/internal/router/middleware/logger.go:21
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2947
+net/http.(*conn).serve
+	/usr/local/go/src/net/http/server.go:1991
+[2023-04-29T18:55:07.677+0800]	[ INFO]	[       middleware/logger.go:26]	/user/UploadAvatar	{"status": 500, "method": "POST", "path": "/user/UploadAvatar", "query": "", "ip": "::1", "errors": "", "cost": "832.897µs"}
+[2023-04-29T18:56:26.382+0800]	[ INFO]	[        blogProject/main.go:87]	3秒超时退出
+[2023-04-29T18:56:26.382+0800]	[ INFO]	[        blogProject/main.go:90]	服务器关闭
+[2023-04-29T18:56:32.237+0800]	[ERROR]	[    service/user_service.go:99]	保存头像失败: open ./uploads/20230429185632.jpeg: no such file or directory
+
+blogProject/internal/service.userService.UploadAvatar
+	/Users/apple/Study/golang/blogProject/internal/service/user_service.go:99
+blogProject/internal/api.userApi.UploadAvatar
+	/Users/apple/Study/golang/blogProject/internal/api/user_api.go:96
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+blogProject/internal/router/middleware.ZapLoggerMiddleware.func1
+	/Users/apple/Study/golang/blogProject/internal/router/middleware/logger.go:21
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2947
+net/http.(*conn).serve
+	/usr/local/go/src/net/http/server.go:1991
+[2023-04-29T18:56:32.237+0800]	[ERROR]	[            api/user_api.go:98]	上传头像失败: open ./uploads/20230429185632.jpeg: no such file or directory
+
+blogProject/internal/api.userApi.UploadAvatar
+	/Users/apple/Study/golang/blogProject/internal/api/user_api.go:98
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+blogProject/internal/router/middleware.ZapLoggerMiddleware.func1
+	/Users/apple/Study/golang/blogProject/internal/router/middleware/logger.go:21
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2947
+net/http.(*conn).serve
+	/usr/local/go/src/net/http/server.go:1991
+[2023-04-29T18:56:32.237+0800]	[ INFO]	[       middleware/logger.go:26]	/user/UploadAvatar	{"status": 500, "method": "POST", "path": "/user/UploadAvatar", "query": "", "ip": "::1", "errors": "", "cost": "1.021869ms"}
+[2023-04-29T18:58:02.414+0800]	[ INFO]	[        blogProject/main.go:87]	3秒超时退出
+[2023-04-29T18:58:02.414+0800]	[ INFO]	[        blogProject/main.go:90]	服务器关闭
+[2023-04-29T18:58:08.942+0800]	[ERROR]	[    service/user_service.go:99]	保存头像失败: open ./uploads/20230429185808.jpeg: no such file or directory
+
+blogProject/internal/service.userService.UploadAvatar
+	/Users/apple/Study/golang/blogProject/internal/service/user_service.go:99
+blogProject/internal/api.userApi.UploadAvatar
+	/Users/apple/Study/golang/blogProject/internal/api/user_api.go:96
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+blogProject/internal/router/middleware.ZapLoggerMiddleware.func1
+	/Users/apple/Study/golang/blogProject/internal/router/middleware/logger.go:21
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2947
+net/http.(*conn).serve
+	/usr/local/go/src/net/http/server.go:1991
+[2023-04-29T18:58:08.942+0800]	[ERROR]	[            api/user_api.go:98]	上传头像失败: open ./uploads/20230429185808.jpeg: no such file or directory
+
+blogProject/internal/api.userApi.UploadAvatar
+	/Users/apple/Study/golang/blogProject/internal/api/user_api.go:98
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+blogProject/internal/router/middleware.ZapLoggerMiddleware.func1
+	/Users/apple/Study/golang/blogProject/internal/router/middleware/logger.go:21
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2947
+net/http.(*conn).serve
+	/usr/local/go/src/net/http/server.go:1991
+[2023-04-29T18:58:08.942+0800]	[ INFO]	[       middleware/logger.go:26]	/user/UploadAvatar	{"status": 500, "method": "POST", "path": "/user/UploadAvatar", "query": "", "ip": "::1", "errors": "", "cost": "833.294µs"}
+[2023-04-29T18:59:15.100+0800]	[ INFO]	[        blogProject/main.go:87]	3秒超时退出
+[2023-04-29T18:59:15.101+0800]	[ INFO]	[        blogProject/main.go:90]	服务器关闭
+[2023-04-29T18:59:24.705+0800]	[ERROR]	[   service/user_service.go:102]	保存头像失败: open ./uploads/20230429185924.jpeg: no such file or directory
+
+blogProject/internal/service.userService.UploadAvatar
+	/Users/apple/Study/golang/blogProject/internal/service/user_service.go:102
+blogProject/internal/api.userApi.UploadAvatar
+	/Users/apple/Study/golang/blogProject/internal/api/user_api.go:96
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+blogProject/internal/router/middleware.ZapLoggerMiddleware.func1
+	/Users/apple/Study/golang/blogProject/internal/router/middleware/logger.go:21
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2947
+net/http.(*conn).serve
+	/usr/local/go/src/net/http/server.go:1991
+[2023-04-29T18:59:24.705+0800]	[ERROR]	[            api/user_api.go:98]	上传头像失败: open ./uploads/20230429185924.jpeg: no such file or directory
+
+blogProject/internal/api.userApi.UploadAvatar
+	/Users/apple/Study/golang/blogProject/internal/api/user_api.go:98
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+blogProject/internal/router/middleware.ZapLoggerMiddleware.func1
+	/Users/apple/Study/golang/blogProject/internal/router/middleware/logger.go:21
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2947
+net/http.(*conn).serve
+	/usr/local/go/src/net/http/server.go:1991
+[2023-04-29T18:59:24.705+0800]	[ INFO]	[       middleware/logger.go:26]	/user/UploadAvatar	{"status": 500, "method": "POST", "path": "/user/UploadAvatar", "query": "", "ip": "::1", "errors": "", "cost": "825.599µs"}
+[2023-04-29T18:59:25.529+0800]	[ERROR]	[   service/user_service.go:102]	保存头像失败: open ./uploads/20230429185925.jpeg: no such file or directory
+
+blogProject/internal/service.userService.UploadAvatar
+	/Users/apple/Study/golang/blogProject/internal/service/user_service.go:102
+blogProject/internal/api.userApi.UploadAvatar
+	/Users/apple/Study/golang/blogProject/internal/api/user_api.go:96
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+blogProject/internal/router/middleware.ZapLoggerMiddleware.func1
+	/Users/apple/Study/golang/blogProject/internal/router/middleware/logger.go:21
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2947
+net/http.(*conn).serve
+	/usr/local/go/src/net/http/server.go:1991
+[2023-04-29T18:59:25.529+0800]	[ERROR]	[            api/user_api.go:98]	上传头像失败: open ./uploads/20230429185925.jpeg: no such file or directory
+
+blogProject/internal/api.userApi.UploadAvatar
+	/Users/apple/Study/golang/blogProject/internal/api/user_api.go:98
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+blogProject/internal/router/middleware.ZapLoggerMiddleware.func1
+	/Users/apple/Study/golang/blogProject/internal/router/middleware/logger.go:21
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2947
+net/http.(*conn).serve
+	/usr/local/go/src/net/http/server.go:1991
+[2023-04-29T18:59:25.529+0800]	[ INFO]	[       middleware/logger.go:26]	/user/UploadAvatar	{"status": 500, "method": "POST", "path": "/user/UploadAvatar", "query": "", "ip": "::1", "errors": "", "cost": "633.21µs"}
+[2023-04-29T18:59:26.063+0800]	[ERROR]	[   service/user_service.go:102]	保存头像失败: open ./uploads/20230429185926.jpeg: no such file or directory
+
+blogProject/internal/service.userService.UploadAvatar
+	/Users/apple/Study/golang/blogProject/internal/service/user_service.go:102
+blogProject/internal/api.userApi.UploadAvatar
+	/Users/apple/Study/golang/blogProject/internal/api/user_api.go:96
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+blogProject/internal/router/middleware.ZapLoggerMiddleware.func1
+	/Users/apple/Study/golang/blogProject/internal/router/middleware/logger.go:21
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2947
+net/http.(*conn).serve
+	/usr/local/go/src/net/http/server.go:1991
+[2023-04-29T18:59:26.063+0800]	[ERROR]	[            api/user_api.go:98]	上传头像失败: open ./uploads/20230429185926.jpeg: no such file or directory
+
+blogProject/internal/api.userApi.UploadAvatar
+	/Users/apple/Study/golang/blogProject/internal/api/user_api.go:98
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+blogProject/internal/router/middleware.ZapLoggerMiddleware.func1
+	/Users/apple/Study/golang/blogProject/internal/router/middleware/logger.go:21
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2947
+net/http.(*conn).serve
+	/usr/local/go/src/net/http/server.go:1991
+[2023-04-29T18:59:26.063+0800]	[ INFO]	[       middleware/logger.go:26]	/user/UploadAvatar	{"status": 500, "method": "POST", "path": "/user/UploadAvatar", "query": "", "ip": "::1", "errors": "", "cost": "845.173µs"}
+[2023-04-29T18:59:26.264+0800]	[ERROR]	[   service/user_service.go:102]	保存头像失败: open ./uploads/20230429185926.jpeg: no such file or directory
+
+blogProject/internal/service.userService.UploadAvatar
+	/Users/apple/Study/golang/blogProject/internal/service/user_service.go:102
+blogProject/internal/api.userApi.UploadAvatar
+	/Users/apple/Study/golang/blogProject/internal/api/user_api.go:96
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+blogProject/internal/router/middleware.ZapLoggerMiddleware.func1
+	/Users/apple/Study/golang/blogProject/internal/router/middleware/logger.go:21
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2947
+net/http.(*conn).serve
+	/usr/local/go/src/net/http/server.go:1991
+[2023-04-29T18:59:26.264+0800]	[ERROR]	[            api/user_api.go:98]	上传头像失败: open ./uploads/20230429185926.jpeg: no such file or directory
+
+blogProject/internal/api.userApi.UploadAvatar
+	/Users/apple/Study/golang/blogProject/internal/api/user_api.go:98
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+blogProject/internal/router/middleware.ZapLoggerMiddleware.func1
+	/Users/apple/Study/golang/blogProject/internal/router/middleware/logger.go:21
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2947
+net/http.(*conn).serve
+	/usr/local/go/src/net/http/server.go:1991
+[2023-04-29T18:59:26.264+0800]	[ INFO]	[       middleware/logger.go:26]	/user/UploadAvatar	{"status": 500, "method": "POST", "path": "/user/UploadAvatar", "query": "", "ip": "::1", "errors": "", "cost": "652.212µs"}
+[2023-04-29T18:59:26.425+0800]	[ERROR]	[   service/user_service.go:102]	保存头像失败: open ./uploads/20230429185926.jpeg: no such file or directory
+
+blogProject/internal/service.userService.UploadAvatar
+	/Users/apple/Study/golang/blogProject/internal/service/user_service.go:102
+blogProject/internal/api.userApi.UploadAvatar
+	/Users/apple/Study/golang/blogProject/internal/api/user_api.go:96
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+blogProject/internal/router/middleware.ZapLoggerMiddleware.func1
+	/Users/apple/Study/golang/blogProject/internal/router/middleware/logger.go:21
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2947
+net/http.(*conn).serve
+	/usr/local/go/src/net/http/server.go:1991
+[2023-04-29T18:59:26.425+0800]	[ERROR]	[            api/user_api.go:98]	上传头像失败: open ./uploads/20230429185926.jpeg: no such file or directory
+
+blogProject/internal/api.userApi.UploadAvatar
+	/Users/apple/Study/golang/blogProject/internal/api/user_api.go:98
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+blogProject/internal/router/middleware.ZapLoggerMiddleware.func1
+	/Users/apple/Study/golang/blogProject/internal/router/middleware/logger.go:21
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2947
+net/http.(*conn).serve
+	/usr/local/go/src/net/http/server.go:1991
+[2023-04-29T18:59:26.425+0800]	[ INFO]	[       middleware/logger.go:26]	/user/UploadAvatar	{"status": 500, "method": "POST", "path": "/user/UploadAvatar", "query": "", "ip": "::1", "errors": "", "cost": "862.073µs"}
+[2023-04-29T18:59:26.578+0800]	[ERROR]	[   service/user_service.go:102]	保存头像失败: open ./uploads/20230429185926.jpeg: no such file or directory
+
+blogProject/internal/service.userService.UploadAvatar
+	/Users/apple/Study/golang/blogProject/internal/service/user_service.go:102
+blogProject/internal/api.userApi.UploadAvatar
+	/Users/apple/Study/golang/blogProject/internal/api/user_api.go:96
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+blogProject/internal/router/middleware.ZapLoggerMiddleware.func1
+	/Users/apple/Study/golang/blogProject/internal/router/middleware/logger.go:21
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2947
+net/http.(*conn).serve
+	/usr/local/go/src/net/http/server.go:1991
+[2023-04-29T18:59:26.578+0800]	[ERROR]	[            api/user_api.go:98]	上传头像失败: open ./uploads/20230429185926.jpeg: no such file or directory
+
+blogProject/internal/api.userApi.UploadAvatar
+	/Users/apple/Study/golang/blogProject/internal/api/user_api.go:98
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+blogProject/internal/router/middleware.ZapLoggerMiddleware.func1
+	/Users/apple/Study/golang/blogProject/internal/router/middleware/logger.go:21
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2947
+net/http.(*conn).serve
+	/usr/local/go/src/net/http/server.go:1991
+[2023-04-29T18:59:26.578+0800]	[ INFO]	[       middleware/logger.go:26]	/user/UploadAvatar	{"status": 500, "method": "POST", "path": "/user/UploadAvatar", "query": "", "ip": "::1", "errors": "", "cost": "1.791317ms"}
+[2023-04-29T18:59:26.742+0800]	[ERROR]	[   service/user_service.go:102]	保存头像失败: open ./uploads/20230429185926.jpeg: no such file or directory
+
+blogProject/internal/service.userService.UploadAvatar
+	/Users/apple/Study/golang/blogProject/internal/service/user_service.go:102
+blogProject/internal/api.userApi.UploadAvatar
+	/Users/apple/Study/golang/blogProject/internal/api/user_api.go:96
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+blogProject/internal/router/middleware.ZapLoggerMiddleware.func1
+	/Users/apple/Study/golang/blogProject/internal/router/middleware/logger.go:21
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2947
+net/http.(*conn).serve
+	/usr/local/go/src/net/http/server.go:1991
+[2023-04-29T18:59:26.742+0800]	[ERROR]	[            api/user_api.go:98]	上传头像失败: open ./uploads/20230429185926.jpeg: no such file or directory
+
+blogProject/internal/api.userApi.UploadAvatar
+	/Users/apple/Study/golang/blogProject/internal/api/user_api.go:98
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+blogProject/internal/router/middleware.ZapLoggerMiddleware.func1
+	/Users/apple/Study/golang/blogProject/internal/router/middleware/logger.go:21
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2947
+net/http.(*conn).serve
+	/usr/local/go/src/net/http/server.go:1991
+[2023-04-29T18:59:26.742+0800]	[ INFO]	[       middleware/logger.go:26]	/user/UploadAvatar	{"status": 500, "method": "POST", "path": "/user/UploadAvatar", "query": "", "ip": "::1", "errors": "", "cost": "689.483µs"}
+[2023-04-29T18:59:26.877+0800]	[ERROR]	[   service/user_service.go:102]	保存头像失败: open ./uploads/20230429185926.jpeg: no such file or directory
+
+blogProject/internal/service.userService.UploadAvatar
+	/Users/apple/Study/golang/blogProject/internal/service/user_service.go:102
+blogProject/internal/api.userApi.UploadAvatar
+	/Users/apple/Study/golang/blogProject/internal/api/user_api.go:96
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+blogProject/internal/router/middleware.ZapLoggerMiddleware.func1
+	/Users/apple/Study/golang/blogProject/internal/router/middleware/logger.go:21
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2947
+net/http.(*conn).serve
+	/usr/local/go/src/net/http/server.go:1991
+[2023-04-29T18:59:26.877+0800]	[ERROR]	[            api/user_api.go:98]	上传头像失败: open ./uploads/20230429185926.jpeg: no such file or directory
+
+blogProject/internal/api.userApi.UploadAvatar
+	/Users/apple/Study/golang/blogProject/internal/api/user_api.go:98
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+blogProject/internal/router/middleware.ZapLoggerMiddleware.func1
+	/Users/apple/Study/golang/blogProject/internal/router/middleware/logger.go:21
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2947
+net/http.(*conn).serve
+	/usr/local/go/src/net/http/server.go:1991
+[2023-04-29T18:59:26.877+0800]	[ INFO]	[       middleware/logger.go:26]	/user/UploadAvatar	{"status": 500, "method": "POST", "path": "/user/UploadAvatar", "query": "", "ip": "::1", "errors": "", "cost": "734.585µs"}
+[2023-04-29T18:59:27.049+0800]	[ERROR]	[   service/user_service.go:102]	保存头像失败: open ./uploads/20230429185927.jpeg: no such file or directory
+
+blogProject/internal/service.userService.UploadAvatar
+	/Users/apple/Study/golang/blogProject/internal/service/user_service.go:102
+blogProject/internal/api.userApi.UploadAvatar
+	/Users/apple/Study/golang/blogProject/internal/api/user_api.go:96
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+blogProject/internal/router/middleware.ZapLoggerMiddleware.func1
+	/Users/apple/Study/golang/blogProject/internal/router/middleware/logger.go:21
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2947
+net/http.(*conn).serve
+	/usr/local/go/src/net/http/server.go:1991
+[2023-04-29T18:59:27.049+0800]	[ERROR]	[            api/user_api.go:98]	上传头像失败: open ./uploads/20230429185927.jpeg: no such file or directory
+
+blogProject/internal/api.userApi.UploadAvatar
+	/Users/apple/Study/golang/blogProject/internal/api/user_api.go:98
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+blogProject/internal/router/middleware.ZapLoggerMiddleware.func1
+	/Users/apple/Study/golang/blogProject/internal/router/middleware/logger.go:21
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2947
+net/http.(*conn).serve
+	/usr/local/go/src/net/http/server.go:1991
+[2023-04-29T18:59:27.049+0800]	[ INFO]	[       middleware/logger.go:26]	/user/UploadAvatar	{"status": 500, "method": "POST", "path": "/user/UploadAvatar", "query": "", "ip": "::1", "errors": "", "cost": "733.032µs"}
+[2023-04-29T18:59:27.267+0800]	[ERROR]	[   service/user_service.go:102]	保存头像失败: open ./uploads/20230429185927.jpeg: no such file or directory
+
+blogProject/internal/service.userService.UploadAvatar
+	/Users/apple/Study/golang/blogProject/internal/service/user_service.go:102
+blogProject/internal/api.userApi.UploadAvatar
+	/Users/apple/Study/golang/blogProject/internal/api/user_api.go:96
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+blogProject/internal/router/middleware.ZapLoggerMiddleware.func1
+	/Users/apple/Study/golang/blogProject/internal/router/middleware/logger.go:21
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2947
+net/http.(*conn).serve
+	/usr/local/go/src/net/http/server.go:1991
+[2023-04-29T18:59:27.267+0800]	[ERROR]	[            api/user_api.go:98]	上传头像失败: open ./uploads/20230429185927.jpeg: no such file or directory
+
+blogProject/internal/api.userApi.UploadAvatar
+	/Users/apple/Study/golang/blogProject/internal/api/user_api.go:98
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+blogProject/internal/router/middleware.ZapLoggerMiddleware.func1
+	/Users/apple/Study/golang/blogProject/internal/router/middleware/logger.go:21
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2947
+net/http.(*conn).serve
+	/usr/local/go/src/net/http/server.go:1991
+[2023-04-29T18:59:27.267+0800]	[ INFO]	[       middleware/logger.go:26]	/user/UploadAvatar	{"status": 500, "method": "POST", "path": "/user/UploadAvatar", "query": "", "ip": "::1", "errors": "", "cost": "1.039361ms"}
+[2023-04-29T18:59:27.817+0800]	[ERROR]	[   service/user_service.go:102]	保存头像失败: open ./uploads/20230429185927.jpeg: no such file or directory
+
+blogProject/internal/service.userService.UploadAvatar
+	/Users/apple/Study/golang/blogProject/internal/service/user_service.go:102
+blogProject/internal/api.userApi.UploadAvatar
+	/Users/apple/Study/golang/blogProject/internal/api/user_api.go:96
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+blogProject/internal/router/middleware.ZapLoggerMiddleware.func1
+	/Users/apple/Study/golang/blogProject/internal/router/middleware/logger.go:21
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2947
+net/http.(*conn).serve
+	/usr/local/go/src/net/http/server.go:1991
+[2023-04-29T18:59:27.817+0800]	[ERROR]	[            api/user_api.go:98]	上传头像失败: open ./uploads/20230429185927.jpeg: no such file or directory
+
+blogProject/internal/api.userApi.UploadAvatar
+	/Users/apple/Study/golang/blogProject/internal/api/user_api.go:98
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+blogProject/internal/router/middleware.ZapLoggerMiddleware.func1
+	/Users/apple/Study/golang/blogProject/internal/router/middleware/logger.go:21
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2947
+net/http.(*conn).serve
+	/usr/local/go/src/net/http/server.go:1991
+[2023-04-29T18:59:27.817+0800]	[ INFO]	[       middleware/logger.go:26]	/user/UploadAvatar	{"status": 500, "method": "POST", "path": "/user/UploadAvatar", "query": "", "ip": "::1", "errors": "", "cost": "757.5µs"}
+[2023-04-29T18:59:30.139+0800]	[ERROR]	[   service/user_service.go:102]	保存头像失败: open ./uploads/20230429185930.jpeg: no such file or directory
+
+blogProject/internal/service.userService.UploadAvatar
+	/Users/apple/Study/golang/blogProject/internal/service/user_service.go:102
+blogProject/internal/api.userApi.UploadAvatar
+	/Users/apple/Study/golang/blogProject/internal/api/user_api.go:96
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+blogProject/internal/router/middleware.ZapLoggerMiddleware.func1
+	/Users/apple/Study/golang/blogProject/internal/router/middleware/logger.go:21
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2947
+net/http.(*conn).serve
+	/usr/local/go/src/net/http/server.go:1991
+[2023-04-29T18:59:30.139+0800]	[ERROR]	[            api/user_api.go:98]	上传头像失败: open ./uploads/20230429185930.jpeg: no such file or directory
+
+blogProject/internal/api.userApi.UploadAvatar
+	/Users/apple/Study/golang/blogProject/internal/api/user_api.go:98
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+blogProject/internal/router/middleware.ZapLoggerMiddleware.func1
+	/Users/apple/Study/golang/blogProject/internal/router/middleware/logger.go:21
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2947
+net/http.(*conn).serve
+	/usr/local/go/src/net/http/server.go:1991
+[2023-04-29T18:59:30.139+0800]	[ INFO]	[       middleware/logger.go:26]	/user/UploadAvatar	{"status": 500, "method": "POST", "path": "/user/UploadAvatar", "query": "", "ip": "::1", "errors": "", "cost": "632.314µs"}
+[2023-04-29T19:00:09.944+0800]	[ INFO]	[        blogProject/main.go:87]	3秒超时退出
+[2023-04-29T19:00:09.944+0800]	[ INFO]	[        blogProject/main.go:90]	服务器关闭
+[2023-04-29T19:00:17.526+0800]	[ERROR]	[   service/user_service.go:102]	保存头像失败: open ./uploads/20230429190017.jpeg: no such file or directory
+
+blogProject/internal/service.userService.UploadAvatar
+	/Users/apple/Study/golang/blogProject/internal/service/user_service.go:102
+blogProject/internal/api.userApi.UploadAvatar
+	/Users/apple/Study/golang/blogProject/internal/api/user_api.go:96
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+blogProject/internal/router/middleware.ZapLoggerMiddleware.func1
+	/Users/apple/Study/golang/blogProject/internal/router/middleware/logger.go:21
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2947
+net/http.(*conn).serve
+	/usr/local/go/src/net/http/server.go:1991
+[2023-04-29T19:00:17.526+0800]	[ERROR]	[            api/user_api.go:98]	上传头像失败: open ./uploads/20230429190017.jpeg: no such file or directory
+
+blogProject/internal/api.userApi.UploadAvatar
+	/Users/apple/Study/golang/blogProject/internal/api/user_api.go:98
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+blogProject/internal/router/middleware.ZapLoggerMiddleware.func1
+	/Users/apple/Study/golang/blogProject/internal/router/middleware/logger.go:21
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2947
+net/http.(*conn).serve
+	/usr/local/go/src/net/http/server.go:1991
+[2023-04-29T19:00:17.527+0800]	[ INFO]	[       middleware/logger.go:26]	/user/UploadAvatar	{"status": 500, "method": "POST", "path": "/user/UploadAvatar", "query": "", "ip": "::1", "errors": "", "cost": "959.22µs"}
+[2023-04-29T19:01:20.342+0800]	[ INFO]	[        blogProject/main.go:87]	3秒超时退出
+[2023-04-29T19:01:20.343+0800]	[ INFO]	[        blogProject/main.go:90]	服务器关闭
+[2023-04-29T19:01:28.499+0800]	[ERROR]	[   service/user_service.go:102]	保存头像失败: open ./uploads/20230429190128.jpeg: no such file or directory
+
+blogProject/internal/service.userService.UploadAvatar
+	/Users/apple/Study/golang/blogProject/internal/service/user_service.go:102
+blogProject/internal/api.userApi.UploadAvatar
+	/Users/apple/Study/golang/blogProject/internal/api/user_api.go:96
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+blogProject/internal/router/middleware.ZapLoggerMiddleware.func1
+	/Users/apple/Study/golang/blogProject/internal/router/middleware/logger.go:21
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2947
+net/http.(*conn).serve
+	/usr/local/go/src/net/http/server.go:1991
+[2023-04-29T19:01:28.499+0800]	[ERROR]	[            api/user_api.go:98]	上传头像失败: open ./uploads/20230429190128.jpeg: no such file or directory
+
+blogProject/internal/api.userApi.UploadAvatar
+	/Users/apple/Study/golang/blogProject/internal/api/user_api.go:98
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+blogProject/internal/router/middleware.ZapLoggerMiddleware.func1
+	/Users/apple/Study/golang/blogProject/internal/router/middleware/logger.go:21
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2947
+net/http.(*conn).serve
+	/usr/local/go/src/net/http/server.go:1991
+[2023-04-29T19:01:28.499+0800]	[ INFO]	[       middleware/logger.go:26]	/user/UploadAvatar	{"status": 500, "method": "POST", "path": "/user/UploadAvatar", "query": "", "ip": "::1", "errors": "", "cost": "889.21µs"}
+[2023-04-29T19:01:38.125+0800]	[ERROR]	[   service/user_service.go:102]	保存头像失败: open ./uploads/20230429190138.jpeg: no such file or directory
+
+blogProject/internal/service.userService.UploadAvatar
+	/Users/apple/Study/golang/blogProject/internal/service/user_service.go:102
+blogProject/internal/api.userApi.UploadAvatar
+	/Users/apple/Study/golang/blogProject/internal/api/user_api.go:96
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+blogProject/internal/router/middleware.ZapLoggerMiddleware.func1
+	/Users/apple/Study/golang/blogProject/internal/router/middleware/logger.go:21
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2947
+net/http.(*conn).serve
+	/usr/local/go/src/net/http/server.go:1991
+[2023-04-29T19:01:38.125+0800]	[ERROR]	[            api/user_api.go:98]	上传头像失败: open ./uploads/20230429190138.jpeg: no such file or directory
+
+blogProject/internal/api.userApi.UploadAvatar
+	/Users/apple/Study/golang/blogProject/internal/api/user_api.go:98
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+blogProject/internal/router/middleware.ZapLoggerMiddleware.func1
+	/Users/apple/Study/golang/blogProject/internal/router/middleware/logger.go:21
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2947
+net/http.(*conn).serve
+	/usr/local/go/src/net/http/server.go:1991
+[2023-04-29T19:01:38.125+0800]	[ INFO]	[       middleware/logger.go:26]	/user/UploadAvatar	{"status": 500, "method": "POST", "path": "/user/UploadAvatar", "query": "", "ip": "::1", "errors": "", "cost": "693.588µs"}
+[2023-04-29T19:23:36.589+0800]	[ INFO]	[        blogProject/main.go:87]	3秒超时退出
+[2023-04-29T19:23:36.592+0800]	[ INFO]	[        blogProject/main.go:90]	服务器关闭
+[2023-04-29T19:23:50.799+0800]	[ERROR]	[   service/user_service.go:102]	保存头像失败: open ./uploads/20230429192350.jpeg: no such file or directory
+
+blogProject/internal/service.userService.UploadAvatar
+	/Users/apple/Study/golang/blogProject/internal/service/user_service.go:102
+blogProject/internal/api.userApi.UploadAvatar
+	/Users/apple/Study/golang/blogProject/internal/api/user_api.go:96
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+blogProject/internal/router/middleware.ZapLoggerMiddleware.func1
+	/Users/apple/Study/golang/blogProject/internal/router/middleware/logger.go:21
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2947
+net/http.(*conn).serve
+	/usr/local/go/src/net/http/server.go:1991
+[2023-04-29T19:23:50.799+0800]	[ERROR]	[            api/user_api.go:98]	上传头像失败: open ./uploads/20230429192350.jpeg: no such file or directory
+
+blogProject/internal/api.userApi.UploadAvatar
+	/Users/apple/Study/golang/blogProject/internal/api/user_api.go:98
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+blogProject/internal/router/middleware.ZapLoggerMiddleware.func1
+	/Users/apple/Study/golang/blogProject/internal/router/middleware/logger.go:21
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2947
+net/http.(*conn).serve
+	/usr/local/go/src/net/http/server.go:1991
+[2023-04-29T19:23:50.799+0800]	[ INFO]	[       middleware/logger.go:26]	/user/UploadAvatar	{"status": 500, "method": "POST", "path": "/user/UploadAvatar", "query": "", "ip": "::1", "errors": "", "cost": "4.028002ms"}
+[2023-04-29T19:23:51.898+0800]	[ERROR]	[   service/user_service.go:102]	保存头像失败: open ./uploads/20230429192351.jpeg: no such file or directory
+
+blogProject/internal/service.userService.UploadAvatar
+	/Users/apple/Study/golang/blogProject/internal/service/user_service.go:102
+blogProject/internal/api.userApi.UploadAvatar
+	/Users/apple/Study/golang/blogProject/internal/api/user_api.go:96
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+blogProject/internal/router/middleware.ZapLoggerMiddleware.func1
+	/Users/apple/Study/golang/blogProject/internal/router/middleware/logger.go:21
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2947
+net/http.(*conn).serve
+	/usr/local/go/src/net/http/server.go:1991
+[2023-04-29T19:23:51.898+0800]	[ERROR]	[            api/user_api.go:98]	上传头像失败: open ./uploads/20230429192351.jpeg: no such file or directory
+
+blogProject/internal/api.userApi.UploadAvatar
+	/Users/apple/Study/golang/blogProject/internal/api/user_api.go:98
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+blogProject/internal/router/middleware.ZapLoggerMiddleware.func1
+	/Users/apple/Study/golang/blogProject/internal/router/middleware/logger.go:21
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2947
+net/http.(*conn).serve
+	/usr/local/go/src/net/http/server.go:1991
+[2023-04-29T19:23:51.898+0800]	[ INFO]	[       middleware/logger.go:26]	/user/UploadAvatar	{"status": 500, "method": "POST", "path": "/user/UploadAvatar", "query": "", "ip": "::1", "errors": "", "cost": "567.264µs"}
+[2023-04-29T19:23:52.325+0800]	[ERROR]	[   service/user_service.go:102]	保存头像失败: open ./uploads/20230429192352.jpeg: no such file or directory
+
+blogProject/internal/service.userService.UploadAvatar
+	/Users/apple/Study/golang/blogProject/internal/service/user_service.go:102
+blogProject/internal/api.userApi.UploadAvatar
+	/Users/apple/Study/golang/blogProject/internal/api/user_api.go:96
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+blogProject/internal/router/middleware.ZapLoggerMiddleware.func1
+	/Users/apple/Study/golang/blogProject/internal/router/middleware/logger.go:21
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2947
+net/http.(*conn).serve
+	/usr/local/go/src/net/http/server.go:1991
+[2023-04-29T19:23:52.325+0800]	[ERROR]	[            api/user_api.go:98]	上传头像失败: open ./uploads/20230429192352.jpeg: no such file or directory
+
+blogProject/internal/api.userApi.UploadAvatar
+	/Users/apple/Study/golang/blogProject/internal/api/user_api.go:98
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+blogProject/internal/router/middleware.ZapLoggerMiddleware.func1
+	/Users/apple/Study/golang/blogProject/internal/router/middleware/logger.go:21
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2947
+net/http.(*conn).serve
+	/usr/local/go/src/net/http/server.go:1991
+[2023-04-29T19:23:52.325+0800]	[ INFO]	[       middleware/logger.go:26]	/user/UploadAvatar	{"status": 500, "method": "POST", "path": "/user/UploadAvatar", "query": "", "ip": "::1", "errors": "", "cost": "695.512µs"}
+[2023-04-29T19:23:54.212+0800]	[ERROR]	[   service/user_service.go:102]	保存头像失败: open ./uploads/20230429192354.jpeg: no such file or directory
+
+blogProject/internal/service.userService.UploadAvatar
+	/Users/apple/Study/golang/blogProject/internal/service/user_service.go:102
+blogProject/internal/api.userApi.UploadAvatar
+	/Users/apple/Study/golang/blogProject/internal/api/user_api.go:96
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+blogProject/internal/router/middleware.ZapLoggerMiddleware.func1
+	/Users/apple/Study/golang/blogProject/internal/router/middleware/logger.go:21
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2947
+net/http.(*conn).serve
+	/usr/local/go/src/net/http/server.go:1991
+[2023-04-29T19:23:54.212+0800]	[ERROR]	[            api/user_api.go:98]	上传头像失败: open ./uploads/20230429192354.jpeg: no such file or directory
+
+blogProject/internal/api.userApi.UploadAvatar
+	/Users/apple/Study/golang/blogProject/internal/api/user_api.go:98
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+blogProject/internal/router/middleware.ZapLoggerMiddleware.func1
+	/Users/apple/Study/golang/blogProject/internal/router/middleware/logger.go:21
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2947
+net/http.(*conn).serve
+	/usr/local/go/src/net/http/server.go:1991
+[2023-04-29T19:23:54.212+0800]	[ INFO]	[       middleware/logger.go:26]	/user/UploadAvatar	{"status": 500, "method": "POST", "path": "/user/UploadAvatar", "query": "", "ip": "::1", "errors": "", "cost": "766.675µs"}
+[2023-04-29T19:24:51.215+0800]	[ INFO]	[        blogProject/main.go:87]	3秒超时退出
+[2023-04-29T19:24:51.216+0800]	[ INFO]	[        blogProject/main.go:90]	服务器关闭
+[2023-04-29T19:24:57.932+0800]	[ERROR]	[   service/user_service.go:102]	保存头像失败: open ./uploads/20230429192457.jpeg: no such file or directory
+
+blogProject/internal/service.userService.UploadAvatar
+	/Users/apple/Study/golang/blogProject/internal/service/user_service.go:102
+blogProject/internal/api.userApi.UploadAvatar
+	/Users/apple/Study/golang/blogProject/internal/api/user_api.go:96
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+blogProject/internal/router/middleware.ZapLoggerMiddleware.func1
+	/Users/apple/Study/golang/blogProject/internal/router/middleware/logger.go:21
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2947
+net/http.(*conn).serve
+	/usr/local/go/src/net/http/server.go:1991
+[2023-04-29T19:24:57.932+0800]	[ERROR]	[            api/user_api.go:98]	上传头像失败: open ./uploads/20230429192457.jpeg: no such file or directory
+
+blogProject/internal/api.userApi.UploadAvatar
+	/Users/apple/Study/golang/blogProject/internal/api/user_api.go:98
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+blogProject/internal/router/middleware.ZapLoggerMiddleware.func1
+	/Users/apple/Study/golang/blogProject/internal/router/middleware/logger.go:21
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2947
+net/http.(*conn).serve
+	/usr/local/go/src/net/http/server.go:1991
+[2023-04-29T19:24:57.932+0800]	[ INFO]	[       middleware/logger.go:26]	/user/UploadAvatar	{"status": 500, "method": "POST", "path": "/user/UploadAvatar", "query": "", "ip": "::1", "errors": "", "cost": "4.519093ms"}
+[2023-04-29T19:25:00.769+0800]	[ERROR]	[   service/user_service.go:102]	保存头像失败: open ./uploads/20230429192500.jpeg: no such file or directory
+
+blogProject/internal/service.userService.UploadAvatar
+	/Users/apple/Study/golang/blogProject/internal/service/user_service.go:102
+blogProject/internal/api.userApi.UploadAvatar
+	/Users/apple/Study/golang/blogProject/internal/api/user_api.go:96
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+blogProject/internal/router/middleware.ZapLoggerMiddleware.func1
+	/Users/apple/Study/golang/blogProject/internal/router/middleware/logger.go:21
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2947
+net/http.(*conn).serve
+	/usr/local/go/src/net/http/server.go:1991
+[2023-04-29T19:25:00.770+0800]	[ERROR]	[            api/user_api.go:98]	上传头像失败: open ./uploads/20230429192500.jpeg: no such file or directory
+
+blogProject/internal/api.userApi.UploadAvatar
+	/Users/apple/Study/golang/blogProject/internal/api/user_api.go:98
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+blogProject/internal/router/middleware.ZapLoggerMiddleware.func1
+	/Users/apple/Study/golang/blogProject/internal/router/middleware/logger.go:21
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2947
+net/http.(*conn).serve
+	/usr/local/go/src/net/http/server.go:1991
+[2023-04-29T19:25:00.770+0800]	[ INFO]	[       middleware/logger.go:26]	/user/UploadAvatar	{"status": 500, "method": "POST", "path": "/user/UploadAvatar", "query": "", "ip": "::1", "errors": "", "cost": "1.184761ms"}
+[2023-04-29T19:26:01.761+0800]	[ INFO]	[        blogProject/main.go:87]	3秒超时退出
+[2023-04-29T19:26:01.761+0800]	[ INFO]	[        blogProject/main.go:90]	服务器关闭
+[2023-04-29T19:26:09.629+0800]	[ERROR]	[   service/user_service.go:102]	保存头像失败: open ./uploads/20230429192609.jpeg: no such file or directory
+
+blogProject/internal/service.userService.UploadAvatar
+	/Users/apple/Study/golang/blogProject/internal/service/user_service.go:102
+blogProject/internal/api.userApi.UploadAvatar
+	/Users/apple/Study/golang/blogProject/internal/api/user_api.go:96
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+blogProject/internal/router/middleware.ZapLoggerMiddleware.func1
+	/Users/apple/Study/golang/blogProject/internal/router/middleware/logger.go:21
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2947
+net/http.(*conn).serve
+	/usr/local/go/src/net/http/server.go:1991
+[2023-04-29T19:26:09.630+0800]	[ERROR]	[            api/user_api.go:98]	上传头像失败: open ./uploads/20230429192609.jpeg: no such file or directory
+
+blogProject/internal/api.userApi.UploadAvatar
+	/Users/apple/Study/golang/blogProject/internal/api/user_api.go:98
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+blogProject/internal/router/middleware.ZapLoggerMiddleware.func1
+	/Users/apple/Study/golang/blogProject/internal/router/middleware/logger.go:21
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2947
+net/http.(*conn).serve
+	/usr/local/go/src/net/http/server.go:1991
+[2023-04-29T19:26:09.630+0800]	[ INFO]	[       middleware/logger.go:26]	/user/UploadAvatar	{"status": 500, "method": "POST", "path": "/user/UploadAvatar", "query": "", "ip": "::1", "errors": "", "cost": "772.968µs"}
+[2023-04-29T19:27:05.071+0800]	[ INFO]	[        blogProject/main.go:87]	3秒超时退出
+[2023-04-29T19:27:05.071+0800]	[ INFO]	[        blogProject/main.go:90]	服务器关闭
+[2023-04-29T19:27:15.908+0800]	[ INFO]	[       middleware/logger.go:26]	/user/UploadAvatar	{"status": 200, "method": "POST", "path": "/user/UploadAvatar", "query": "", "ip": "::1", "errors": "", "cost": "1.987947ms"}
+[2023-04-29T19:29:22.735+0800]	[ INFO]	[        blogProject/main.go:87]	3秒超时退出
+[2023-04-29T19:29:22.735+0800]	[ INFO]	[        blogProject/main.go:90]	服务器关闭
+[2023-04-29T19:29:29.704+0800]	[ INFO]	[       middleware/logger.go:26]	/user/UploadAvatar	{"status": 200, "method": "POST", "path": "/user/UploadAvatar", "query": "", "ip": "::1", "errors": "", "cost": "3.785497ms"}
+[2023-04-30T16:08:48.630+0800]	[ INFO]	[        blogProject/main.go:87]	3秒超时退出
+[2023-04-30T16:08:48.642+0800]	[ INFO]	[        blogProject/main.go:90]	服务器关闭
+[2023-04-30T16:08:58.590+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/index.html	{"status": 200, "method": "GET", "path": "/swagger/index.html", "query": "", "ip": "::1", "errors": "", "cost": "603.56µs"}
+[2023-04-30T16:08:58.757+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/swagger-ui.css	{"status": 200, "method": "GET", "path": "/swagger/swagger-ui.css", "query": "", "ip": "::1", "errors": "", "cost": "160.291µs"}
+[2023-04-30T16:08:58.788+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/swagger-ui-bundle.js	{"status": 200, "method": "GET", "path": "/swagger/swagger-ui-bundle.js", "query": "", "ip": "::1", "errors": "", "cost": "1.208941ms"}
+[2023-04-30T16:08:58.792+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/swagger-ui-standalone-preset.js	{"status": 200, "method": "GET", "path": "/swagger/swagger-ui-standalone-preset.js", "query": "", "ip": "::1", "errors": "", "cost": "286.723µs"}
+[2023-04-30T16:08:59.211+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/doc.json	{"status": 200, "method": "GET", "path": "/swagger/doc.json", "query": "", "ip": "::1", "errors": "", "cost": "208.608µs"}
+[2023-04-30T16:08:59.356+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/favicon-32x32.png	{"status": 200, "method": "GET", "path": "/swagger/favicon-32x32.png", "query": "", "ip": "::1", "errors": "", "cost": "39.805µs"}
+[2023-04-30T16:09:44.913+0800]	[ INFO]	[   service/admin_service.go:19]	用户注册接收到的密码为:wan0909
+
+[2023-04-30T16:09:44.913+0800]	[ INFO]	[   service/admin_service.go:21]	开始对明文密码进行加密, 明文密码为: wan0909
+
+[2023-04-30T16:09:44.988+0800]	[ INFO]	[   service/admin_service.go:23]	加密之后的密码为: $2a$10$lqGL0TsZTiceD4D8SK90hukrLosit6OKbPu.WfQMu9xtxWJvmG.Em
+
+[2023-04-30T16:09:45.058+0800]	[ERROR]	[   zaplogger/gorm_logger.go:81]	trace	{"error": "Error 1364 (HY000): Field 'id' doesn't have a default value", "elapsedTime": "70.084301ms", "rowsAffected": 0, "sql": "INSERT INTO `admin` (`username`,`nickname`,`password`,`website`,`birth`,`tel`,`email`,`avatar`,`city`,`school`) VALUES ('斯蒂芬库里',NULL,'$2a$10$lqGL0TsZTiceD4D8SK90hukrLosit6OKbPu.WfQMu9xtxWJvmG.Em',NULL,NULL,'11111111111',NULL,NULL,NULL,NULL)"}
+blogProject/pkg/zaplogger.GormLogger.Trace
+	/Users/apple/Study/golang/blogProject/pkg/zaplogger/gorm_logger.go:81
+gorm.io/gorm.(*processor).Execute
+	/Users/apple/go/pkg/mod/gorm.io/gorm@v1.25.0/callbacks.go:134
+gorm.io/gorm.(*DB).CreateInBatches
+	/Users/apple/go/pkg/mod/gorm.io/gorm@v1.25.0/finisher_api.go:69
+gorm.io/gorm.(*DB).Create
+	/Users/apple/go/pkg/mod/gorm.io/gorm@v1.25.0/finisher_api.go:21
+blogProject/internal/repository/dao.adminDao.AdminRegister
+	/Users/apple/Study/golang/blogProject/internal/repository/dao/admain_dao.go:14
+blogProject/internal/service.adminService.AdminRegister
+	/Users/apple/Study/golang/blogProject/internal/service/admin_service.go:35
+blogProject/internal/api.adminApi.AdminRegister
+	/Users/apple/Study/golang/blogProject/internal/api/admin_api.go:39
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+blogProject/internal/router/middleware.ZapLoggerMiddleware.func1
+	/Users/apple/Study/golang/blogProject/internal/router/middleware/logger.go:21
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2947
+net/http.(*conn).serve
+	/usr/local/go/src/net/http/server.go:1991
+[2023-04-30T16:09:45.059+0800]	[ INFO]	[       middleware/logger.go:26]	/admin/AdminRegister	{"status": 200, "method": "POST", "path": "/admin/AdminRegister", "query": "", "ip": "::1", "errors": "", "cost": "146.042439ms"}
+[2023-04-30T16:22:49.757+0800]	[ INFO]	[        blogProject/main.go:87]	3秒超时退出
+[2023-04-30T16:22:49.757+0800]	[ INFO]	[        blogProject/main.go:90]	服务器关闭
+[2023-04-30T16:23:34.609+0800]	[ INFO]	[    service/user_service.go:23]	用户注册接收到的密码为:123456
+
+[2023-04-30T16:23:34.609+0800]	[ INFO]	[    service/user_service.go:25]	开始对明文密码进行加密, 明文密码为: 123456
+
+[2023-04-30T16:23:34.685+0800]	[ INFO]	[    service/user_service.go:27]	加密之后的密码为: $2a$10$S2xMqRReeeOzBiWEqWJ0luGF8jfXK3NlF42T6JrRqu7tCytqjKGFu
+
+[2023-04-30T16:23:34.701+0800]	[DEBUG]	[   zaplogger/gorm_logger.go:96]	info	{"elapsedTime": "15.877416ms", "rowsAffected": 1, "sql": "INSERT INTO `user` (`username`,`password`,`tel`,`avatar`) VALUES ('王思楠','$2a$10$S2xMqRReeeOzBiWEqWJ0luGF8jfXK3NlF42T6JrRqu7tCytqjKGFu','12345678912',NULL)"}
+[2023-04-30T16:23:34.701+0800]	[ INFO]	[       middleware/logger.go:26]	/user/UserRegister	{"status": 200, "method": "POST", "path": "/user/UserRegister", "query": "", "ip": "::1", "errors": "", "cost": "93.792472ms"}
+[2023-04-30T16:24:09.500+0800]	[ INFO]	[   service/admin_service.go:19]	用户注册接收到的密码为:wan0909
+
+[2023-04-30T16:24:09.500+0800]	[ INFO]	[   service/admin_service.go:21]	开始对明文密码进行加密, 明文密码为: wan0909
+
+[2023-04-30T16:24:09.576+0800]	[ INFO]	[   service/admin_service.go:23]	加密之后的密码为: $2a$10$XBKNXc6JLEESz9HhCdLhPOEPb/DmkiKTC0IedVE0.NqOS8WRSMneS
+
+[2023-04-30T16:24:09.577+0800]	[ERROR]	[   zaplogger/gorm_logger.go:81]	trace	{"error": "Error 1364 (HY000): Field 'id' doesn't have a default value", "elapsedTime": "1.272297ms", "rowsAffected": 0, "sql": "INSERT INTO `admin` (`username`,`nickname`,`password`,`website`,`birth`,`tel`,`email`,`avatar`,`city`,`school`) VALUES ('斯蒂芬库里',NULL,'$2a$10$XBKNXc6JLEESz9HhCdLhPOEPb/DmkiKTC0IedVE0.NqOS8WRSMneS',NULL,NULL,'11111111111',NULL,NULL,NULL,NULL)"}
+blogProject/pkg/zaplogger.GormLogger.Trace
+	/Users/apple/Study/golang/blogProject/pkg/zaplogger/gorm_logger.go:81
+gorm.io/gorm.(*processor).Execute
+	/Users/apple/go/pkg/mod/gorm.io/gorm@v1.25.0/callbacks.go:134
+gorm.io/gorm.(*DB).CreateInBatches
+	/Users/apple/go/pkg/mod/gorm.io/gorm@v1.25.0/finisher_api.go:69
+gorm.io/gorm.(*DB).Create
+	/Users/apple/go/pkg/mod/gorm.io/gorm@v1.25.0/finisher_api.go:21
+blogProject/internal/repository/dao.adminDao.AdminRegister
+	/Users/apple/Study/golang/blogProject/internal/repository/dao/admain_dao.go:14
+blogProject/internal/service.adminService.AdminRegister
+	/Users/apple/Study/golang/blogProject/internal/service/admin_service.go:35
+blogProject/internal/api.adminApi.AdminRegister
+	/Users/apple/Study/golang/blogProject/internal/api/admin_api.go:39
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+blogProject/internal/router/middleware.ZapLoggerMiddleware.func1
+	/Users/apple/Study/golang/blogProject/internal/router/middleware/logger.go:21
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2947
+net/http.(*conn).serve
+	/usr/local/go/src/net/http/server.go:1991
+[2023-04-30T16:24:09.578+0800]	[ INFO]	[       middleware/logger.go:26]	/admin/AdminRegister	{"status": 200, "method": "POST", "path": "/admin/AdminRegister", "query": "", "ip": "::1", "errors": "", "cost": "77.30932ms"}
+[2023-05-01T18:20:14.593+0800]	[ INFO]	[   service/admin_service.go:19]	用户注册接收到的密码为:wan0909
+
+[2023-05-01T18:20:14.594+0800]	[ INFO]	[   service/admin_service.go:21]	开始对明文密码进行加密, 明文密码为: wan0909
+
+[2023-05-01T18:20:14.675+0800]	[ INFO]	[   service/admin_service.go:23]	加密之后的密码为: $2a$10$2Vl6H51J6nG9HPkb2i6JOemo6qBAe2HWHLKlNVPbDrDrZ4aRhSRh6
+
+[2023-05-01T18:20:14.725+0800]	[ERROR]	[   zaplogger/gorm_logger.go:81]	trace	{"error": "Error 1364 (HY000): Field 'id' doesn't have a default value", "elapsedTime": "49.282397ms", "rowsAffected": 0, "sql": "INSERT INTO `admin` (`username`,`nickname`,`password`,`website`,`birth`,`tel`,`email`,`avatar`,`city`,`school`) VALUES ('斯蒂芬库里',NULL,'$2a$10$2Vl6H51J6nG9HPkb2i6JOemo6qBAe2HWHLKlNVPbDrDrZ4aRhSRh6',NULL,NULL,'11111111111',NULL,NULL,NULL,NULL)"}
+blogProject/pkg/zaplogger.GormLogger.Trace
+	/Users/apple/Study/golang/blogProject/pkg/zaplogger/gorm_logger.go:81
+gorm.io/gorm.(*processor).Execute
+	/Users/apple/go/pkg/mod/gorm.io/gorm@v1.25.0/callbacks.go:134
+gorm.io/gorm.(*DB).CreateInBatches
+	/Users/apple/go/pkg/mod/gorm.io/gorm@v1.25.0/finisher_api.go:69
+gorm.io/gorm.(*DB).Create
+	/Users/apple/go/pkg/mod/gorm.io/gorm@v1.25.0/finisher_api.go:21
+blogProject/internal/repository/dao.adminDao.AdminRegister
+	/Users/apple/Study/golang/blogProject/internal/repository/dao/admain_dao.go:14
+blogProject/internal/service.adminService.AdminRegister
+	/Users/apple/Study/golang/blogProject/internal/service/admin_service.go:35
+blogProject/internal/api.adminApi.AdminRegister
+	/Users/apple/Study/golang/blogProject/internal/api/admin_api.go:39
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+blogProject/internal/router/middleware.ZapLoggerMiddleware.func1
+	/Users/apple/Study/golang/blogProject/internal/router/middleware/logger.go:21
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2947
+net/http.(*conn).serve
+	/usr/local/go/src/net/http/server.go:1991
+[2023-05-01T18:20:14.725+0800]	[ INFO]	[       middleware/logger.go:26]	/admin/AdminRegister	{"status": 200, "method": "POST", "path": "/admin/AdminRegister", "query": "", "ip": "::1", "errors": "", "cost": "132.892247ms"}
+[2023-05-01T18:21:03.292+0800]	[ INFO]	[        blogProject/main.go:87]	3秒超时退出
+[2023-05-01T18:21:03.296+0800]	[ INFO]	[        blogProject/main.go:90]	服务器关闭
+[2023-05-01T18:21:24.813+0800]	[ INFO]	[   service/admin_service.go:19]	用户注册接收到的密码为:wan0909
+
+[2023-05-01T18:21:24.814+0800]	[ INFO]	[   service/admin_service.go:21]	开始对明文密码进行加密, 明文密码为: wan0909
+
+[2023-05-01T18:21:24.890+0800]	[ INFO]	[   service/admin_service.go:23]	加密之后的密码为: $2a$10$i8GCLDLXjHZ6AoTi.WyIZeFhdEdltliB9exg1zTtthi9aNAaU19Eq
+
+[2023-05-01T18:21:24.897+0800]	[ERROR]	[   zaplogger/gorm_logger.go:81]	trace	{"error": "Error 1364 (HY000): Field 'id' doesn't have a default value", "elapsedTime": "6.398051ms", "rowsAffected": 0, "sql": "INSERT INTO `admin` (`username`,`nickname`,`password`,`website`,`birth`,`tel`,`email`,`avatar`,`city`,`school`) VALUES ('斯蒂芬库里',NULL,'$2a$10$i8GCLDLXjHZ6AoTi.WyIZeFhdEdltliB9exg1zTtthi9aNAaU19Eq',NULL,NULL,'11111111111',NULL,NULL,NULL,NULL)"}
+blogProject/pkg/zaplogger.GormLogger.Trace
+	/Users/apple/Study/golang/blogProject/pkg/zaplogger/gorm_logger.go:81
+gorm.io/gorm.(*processor).Execute
+	/Users/apple/go/pkg/mod/gorm.io/gorm@v1.25.0/callbacks.go:134
+gorm.io/gorm.(*DB).CreateInBatches
+	/Users/apple/go/pkg/mod/gorm.io/gorm@v1.25.0/finisher_api.go:69
+gorm.io/gorm.(*DB).Create
+	/Users/apple/go/pkg/mod/gorm.io/gorm@v1.25.0/finisher_api.go:21
+blogProject/internal/repository/dao.adminDao.AdminRegister
+	/Users/apple/Study/golang/blogProject/internal/repository/dao/admain_dao.go:14
+blogProject/internal/service.adminService.AdminRegister
+	/Users/apple/Study/golang/blogProject/internal/service/admin_service.go:35
+blogProject/internal/api.adminApi.AdminRegister
+	/Users/apple/Study/golang/blogProject/internal/api/admin_api.go:39
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+blogProject/internal/router/middleware.ZapLoggerMiddleware.func1
+	/Users/apple/Study/golang/blogProject/internal/router/middleware/logger.go:21
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2947
+net/http.(*conn).serve
+	/usr/local/go/src/net/http/server.go:1991
+[2023-05-01T18:21:24.897+0800]	[ INFO]	[       middleware/logger.go:26]	/admin/AdminRegister	{"status": 200, "method": "POST", "path": "/admin/AdminRegister", "query": "", "ip": "::1", "errors": "", "cost": "83.776979ms"}
+[2023-05-01T18:23:34.433+0800]	[ INFO]	[   service/admin_service.go:19]	用户注册接收到的密码为:wan0909
+
+[2023-05-01T18:23:34.434+0800]	[ INFO]	[   service/admin_service.go:21]	开始对明文密码进行加密, 明文密码为: wan0909
+
+[2023-05-01T18:23:34.510+0800]	[ INFO]	[   service/admin_service.go:23]	加密之后的密码为: $2a$10$7Kcss1S22sQpDDnJI6qtPO0rBwOOquQ/iGdGfrlygk3s8uy29a.aa
+
+[2023-05-01T18:23:34.512+0800]	[ERROR]	[   zaplogger/gorm_logger.go:81]	trace	{"error": "Error 1364 (HY000): Field 'id' doesn't have a default value", "elapsedTime": "1.940291ms", "rowsAffected": 0, "sql": "INSERT INTO `admin` (`username`,`nickname`,`password`,`website`,`birth`,`tel`,`email`,`avatar`,`city`,`school`) VALUES ('斯蒂芬库里',NULL,'$2a$10$7Kcss1S22sQpDDnJI6qtPO0rBwOOquQ/iGdGfrlygk3s8uy29a.aa',NULL,NULL,'11111111111',NULL,NULL,NULL,NULL)"}
+blogProject/pkg/zaplogger.GormLogger.Trace
+	/Users/apple/Study/golang/blogProject/pkg/zaplogger/gorm_logger.go:81
+gorm.io/gorm.(*processor).Execute
+	/Users/apple/go/pkg/mod/gorm.io/gorm@v1.25.0/callbacks.go:134
+gorm.io/gorm.(*DB).CreateInBatches
+	/Users/apple/go/pkg/mod/gorm.io/gorm@v1.25.0/finisher_api.go:69
+gorm.io/gorm.(*DB).Create
+	/Users/apple/go/pkg/mod/gorm.io/gorm@v1.25.0/finisher_api.go:21
+blogProject/internal/repository/dao.adminDao.AdminRegister
+	/Users/apple/Study/golang/blogProject/internal/repository/dao/admain_dao.go:14
+blogProject/internal/service.adminService.AdminRegister
+	/Users/apple/Study/golang/blogProject/internal/service/admin_service.go:35
+blogProject/internal/api.adminApi.AdminRegister
+	/Users/apple/Study/golang/blogProject/internal/api/admin_api.go:39
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+blogProject/internal/router/middleware.ZapLoggerMiddleware.func1
+	/Users/apple/Study/golang/blogProject/internal/router/middleware/logger.go:21
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2947
+net/http.(*conn).serve
+	/usr/local/go/src/net/http/server.go:1991
+[2023-05-01T18:23:34.513+0800]	[ INFO]	[       middleware/logger.go:26]	/admin/AdminRegister	{"status": 200, "method": "POST", "path": "/admin/AdminRegister", "query": "", "ip": "::1", "errors": "", "cost": "79.449419ms"}
+[2023-05-01T18:24:38.025+0800]	[ INFO]	[   service/admin_service.go:19]	用户注册接收到的密码为:wan0909
+
+[2023-05-01T18:24:38.026+0800]	[ INFO]	[   service/admin_service.go:21]	开始对明文密码进行加密, 明文密码为: wan0909
+
+[2023-05-01T18:24:38.104+0800]	[ INFO]	[   service/admin_service.go:23]	加密之后的密码为: $2a$10$cGS9Jnd6U8VA7s2RjyvvPegQs4fLJiGlrMB2K2mTyT8.1tqL/UlMS
+
+[2023-05-01T18:24:38.109+0800]	[DEBUG]	[   zaplogger/gorm_logger.go:96]	info	{"elapsedTime": "5.690284ms", "rowsAffected": 1, "sql": "INSERT INTO `admin` (`username`,`nickname`,`password`,`website`,`birth`,`tel`,`email`,`avatar`,`city`,`school`) VALUES ('斯蒂芬库里',NULL,'$2a$10$cGS9Jnd6U8VA7s2RjyvvPegQs4fLJiGlrMB2K2mTyT8.1tqL/UlMS',NULL,NULL,'11111111111',NULL,NULL,NULL,NULL)"}
+[2023-05-01T18:24:38.110+0800]	[ INFO]	[       middleware/logger.go:26]	/admin/AdminRegister	{"status": 200, "method": "POST", "path": "/admin/AdminRegister", "query": "", "ip": "::1", "errors": "", "cost": "84.492459ms"}
+[2023-05-01T18:25:17.968+0800]	[ INFO]	[   service/admin_service.go:45]	用户登录前端传递过来的密码为: wang0909
+[2023-05-01T18:25:17.973+0800]	[DEBUG]	[   zaplogger/gorm_logger.go:96]	info	{"elapsedTime": "4.624269ms", "rowsAffected": 1, "sql": "SELECT * FROM `Admin` WHERE username='斯蒂芬库里' ORDER BY `Admin`.`id` LIMIT 1"}
+[2023-05-01T18:25:17.973+0800]	[ INFO]	[   service/admin_service.go:59]	从数据库中获取的用户密码为:%!s(*string=0xc00060e0e0)
+[2023-05-01T18:25:17.973+0800]	[ INFO]	[   service/admin_service.go:60]	接收到的前端用户用户密码为:wang0909
+[2023-05-01T18:25:18.054+0800]	[ERROR]	[   service/admin_service.go:65]	用户名或者密码错误: crypto/bcrypt: hashedPassword is not the hash of the given password
+blogProject/internal/service.adminService.AdminLogin
+	/Users/apple/Study/golang/blogProject/internal/service/admin_service.go:65
+blogProject/internal/api.adminApi.AdminLogin
+	/Users/apple/Study/golang/blogProject/internal/api/admin_api.go:71
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+blogProject/internal/router/middleware.ZapLoggerMiddleware.func1
+	/Users/apple/Study/golang/blogProject/internal/router/middleware/logger.go:21
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2947
+net/http.(*conn).serve
+	/usr/local/go/src/net/http/server.go:1991
+[2023-05-01T18:25:18.054+0800]	[ERROR]	[           api/admin_api.go:73]	用户登陆失败: crypto/bcrypt: hashedPassword is not the hash of the given password
+
+blogProject/internal/api.adminApi.AdminLogin
+	/Users/apple/Study/golang/blogProject/internal/api/admin_api.go:73
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+blogProject/internal/router/middleware.ZapLoggerMiddleware.func1
+	/Users/apple/Study/golang/blogProject/internal/router/middleware/logger.go:21
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2947
+net/http.(*conn).serve
+	/usr/local/go/src/net/http/server.go:1991
+[2023-05-01T18:25:18.054+0800]	[ INFO]	[       middleware/logger.go:26]	/admin/AdminLogin	{"status": 500, "method": "POST", "path": "/admin/AdminLogin", "query": "", "ip": "::1", "errors": "", "cost": "86.463866ms"}
+[2023-05-01T18:27:54.257+0800]	[ INFO]	[        blogProject/main.go:87]	3秒超时退出
+[2023-05-01T18:27:54.258+0800]	[ INFO]	[        blogProject/main.go:90]	服务器关闭
+[2023-05-01T18:28:07.879+0800]	[ INFO]	[   service/admin_service.go:19]	用户注册接收到的密码为:wan0909
+
+[2023-05-01T18:28:07.879+0800]	[ INFO]	[   service/admin_service.go:21]	开始对明文密码进行加密, 明文密码为: wan0909
+
+[2023-05-01T18:28:07.955+0800]	[ INFO]	[   service/admin_service.go:23]	加密之后的密码为: $2a$10$ToJoo/gwJAk3lahUKOIWh.IyMEZ9XljRd12mnGTcvhrgV1fLkaexq
+
+[2023-05-01T18:28:07.965+0800]	[DEBUG]	[   zaplogger/gorm_logger.go:96]	info	{"elapsedTime": "9.452752ms", "rowsAffected": 1, "sql": "INSERT INTO `admin` (`username`,`nickname`,`password`,`website`,`birth`,`tel`,`email`,`avatar`,`city`,`school`) VALUES ('斯蒂芬库里',NULL,'$2a$10$ToJoo/gwJAk3lahUKOIWh.IyMEZ9XljRd12mnGTcvhrgV1fLkaexq',NULL,NULL,'11111111111',NULL,NULL,NULL,NULL)"}
+[2023-05-01T18:28:07.965+0800]	[ INFO]	[       middleware/logger.go:26]	/admin/AdminRegister	{"status": 200, "method": "POST", "path": "/admin/AdminRegister", "query": "", "ip": "::1", "errors": "", "cost": "86.319972ms"}
+[2023-05-01T18:28:35.870+0800]	[ INFO]	[   service/admin_service.go:45]	用户登录前端传递过来的密码为: wang0909
+[2023-05-01T18:28:35.872+0800]	[DEBUG]	[   zaplogger/gorm_logger.go:96]	info	{"elapsedTime": "1.462982ms", "rowsAffected": 1, "sql": "SELECT * FROM `admin` WHERE username='斯蒂芬库里' ORDER BY `admin`.`id` LIMIT 1"}
+[2023-05-01T18:28:35.872+0800]	[ INFO]	[   service/admin_service.go:59]	从数据库中获取的用户密码为:$2a$10$cGS9Jnd6U8VA7s2RjyvvPegQs4fLJiGlrMB2K2mTyT8.1tqL/UlMS
+[2023-05-01T18:28:35.872+0800]	[ INFO]	[   service/admin_service.go:60]	接收到的前端用户用户密码为:wang0909
+[2023-05-01T18:28:35.948+0800]	[ERROR]	[   service/admin_service.go:65]	用户名或者密码错误: crypto/bcrypt: hashedPassword is not the hash of the given password
+blogProject/internal/service.adminService.AdminLogin
+	/Users/apple/Study/golang/blogProject/internal/service/admin_service.go:65
+blogProject/internal/api.adminApi.AdminLogin
+	/Users/apple/Study/golang/blogProject/internal/api/admin_api.go:71
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+blogProject/internal/router/middleware.ZapLoggerMiddleware.func1
+	/Users/apple/Study/golang/blogProject/internal/router/middleware/logger.go:21
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2947
+net/http.(*conn).serve
+	/usr/local/go/src/net/http/server.go:1991
+[2023-05-01T18:28:35.948+0800]	[ERROR]	[           api/admin_api.go:73]	用户登陆失败: crypto/bcrypt: hashedPassword is not the hash of the given password
+
+blogProject/internal/api.adminApi.AdminLogin
+	/Users/apple/Study/golang/blogProject/internal/api/admin_api.go:73
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+blogProject/internal/router/middleware.ZapLoggerMiddleware.func1
+	/Users/apple/Study/golang/blogProject/internal/router/middleware/logger.go:21
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2947
+net/http.(*conn).serve
+	/usr/local/go/src/net/http/server.go:1991
+[2023-05-01T18:28:35.948+0800]	[ INFO]	[       middleware/logger.go:26]	/admin/AdminLogin	{"status": 500, "method": "POST", "path": "/admin/AdminLogin", "query": "", "ip": "::1", "errors": "", "cost": "78.128481ms"}
+[2023-05-01T18:40:42.327+0800]	[ INFO]	[        blogProject/main.go:87]	3秒超时退出
+[2023-05-01T18:40:42.329+0800]	[ INFO]	[        blogProject/main.go:90]	服务器关闭
+[2023-05-01T18:41:03.708+0800]	[ INFO]	[   service/admin_service.go:45]	用户登录前端传递过来的密码为: wang0909
+[2023-05-01T18:41:03.711+0800]	[DEBUG]	[   zaplogger/gorm_logger.go:96]	info	{"elapsedTime": "1.931354ms", "rowsAffected": 1, "sql": "SELECT * FROM `admin` WHERE username='斯蒂芬库里' ORDER BY `admin`.`id` LIMIT 1"}
+[2023-05-01T18:41:03.711+0800]	[ INFO]	[   service/admin_service.go:60]	从数据库中获取的用户密码为:$2a$10$cGS9Jnd6U8VA7s2RjyvvPegQs4fLJiGlrMB2K2mTyT8.1tqL/UlMS
+[2023-05-01T18:41:03.711+0800]	[ INFO]	[   service/admin_service.go:61]	接收到的前端用户用户密码为:wang0909
+[2023-05-01T18:41:03.787+0800]	[ERROR]	[   service/admin_service.go:66]	用户名或者密码错误: crypto/bcrypt: hashedPassword is not the hash of the given password
+blogProject/internal/service.adminService.AdminLogin
+	/Users/apple/Study/golang/blogProject/internal/service/admin_service.go:66
+blogProject/internal/api.adminApi.AdminLogin
+	/Users/apple/Study/golang/blogProject/internal/api/admin_api.go:71
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+blogProject/internal/router/middleware.ZapLoggerMiddleware.func1
+	/Users/apple/Study/golang/blogProject/internal/router/middleware/logger.go:21
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2947
+net/http.(*conn).serve
+	/usr/local/go/src/net/http/server.go:1991
+[2023-05-01T18:41:03.787+0800]	[ERROR]	[           api/admin_api.go:73]	用户登陆失败: crypto/bcrypt: hashedPassword is not the hash of the given password
+
+blogProject/internal/api.adminApi.AdminLogin
+	/Users/apple/Study/golang/blogProject/internal/api/admin_api.go:73
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+blogProject/internal/router/middleware.ZapLoggerMiddleware.func1
+	/Users/apple/Study/golang/blogProject/internal/router/middleware/logger.go:21
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2947
+net/http.(*conn).serve
+	/usr/local/go/src/net/http/server.go:1991
+[2023-05-01T18:41:03.787+0800]	[ INFO]	[       middleware/logger.go:26]	/admin/AdminLogin	{"status": 500, "method": "POST", "path": "/admin/AdminLogin", "query": "", "ip": "::1", "errors": "", "cost": "78.747465ms"}
+[2023-05-01T18:41:26.185+0800]	[ INFO]	[   service/admin_service.go:45]	用户登录前端传递过来的密码为: wan0909
+[2023-05-01T18:41:26.189+0800]	[DEBUG]	[   zaplogger/gorm_logger.go:96]	info	{"elapsedTime": "3.32203ms", "rowsAffected": 1, "sql": "SELECT * FROM `admin` WHERE username='斯蒂芬库里' ORDER BY `admin`.`id` LIMIT 1"}
+[2023-05-01T18:41:26.189+0800]	[ INFO]	[   service/admin_service.go:60]	从数据库中获取的用户密码为:$2a$10$cGS9Jnd6U8VA7s2RjyvvPegQs4fLJiGlrMB2K2mTyT8.1tqL/UlMS
+[2023-05-01T18:41:26.189+0800]	[ INFO]	[   service/admin_service.go:61]	接收到的前端用户用户密码为:wan0909
+[2023-05-01T18:41:26.266+0800]	[ INFO]	[       middleware/logger.go:26]	/admin/AdminLogin	{"status": 200, "method": "POST", "path": "/admin/AdminLogin", "query": "", "ip": "::1", "errors": "", "cost": "81.221262ms"}
+[2023-05-01T19:09:43.995+0800]	[ INFO]	[        blogProject/main.go:87]	3秒超时退出
+[2023-05-01T19:09:43.996+0800]	[ INFO]	[        blogProject/main.go:90]	服务器关闭
+[2023-05-01T19:09:54.328+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/index.html	{"status": 200, "method": "GET", "path": "/swagger/index.html", "query": "", "ip": "::1", "errors": "", "cost": "511.523µs"}
+[2023-05-01T19:09:54.406+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/swagger-ui.css	{"status": 200, "method": "GET", "path": "/swagger/swagger-ui.css", "query": "", "ip": "::1", "errors": "", "cost": "181.884µs"}
+[2023-05-01T19:09:54.410+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/swagger-ui-bundle.js	{"status": 200, "method": "GET", "path": "/swagger/swagger-ui-bundle.js", "query": "", "ip": "::1", "errors": "", "cost": "2.03419ms"}
+[2023-05-01T19:09:54.411+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/swagger-ui-standalone-preset.js	{"status": 200, "method": "GET", "path": "/swagger/swagger-ui-standalone-preset.js", "query": "", "ip": "::1", "errors": "", "cost": "278.248µs"}
+[2023-05-01T19:09:54.718+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/doc.json	{"status": 200, "method": "GET", "path": "/swagger/doc.json", "query": "", "ip": "::1", "errors": "", "cost": "609.718µs"}
+[2023-05-01T19:09:54.792+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/favicon-32x32.png	{"status": 200, "method": "GET", "path": "/swagger/favicon-32x32.png", "query": "", "ip": "::1", "errors": "", "cost": "111.098µs"}
+[2023-05-01T19:10:08.915+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/index.html	{"status": 200, "method": "GET", "path": "/swagger/index.html", "query": "", "ip": "::1", "errors": "", "cost": "94.918µs"}
+[2023-05-01T19:10:08.931+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/swagger-ui-bundle.js	{"status": 304, "method": "GET", "path": "/swagger/swagger-ui-bundle.js", "query": "", "ip": "::1", "errors": "", "cost": "31.058µs"}
+[2023-05-01T19:10:08.933+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/swagger-ui.css	{"status": 304, "method": "GET", "path": "/swagger/swagger-ui.css", "query": "", "ip": "::1", "errors": "", "cost": "29.671µs"}
+[2023-05-01T19:10:08.933+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/swagger-ui-standalone-preset.js	{"status": 304, "method": "GET", "path": "/swagger/swagger-ui-standalone-preset.js", "query": "", "ip": "::1", "errors": "", "cost": "22.314µs"}
+[2023-05-01T19:10:09.107+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/doc.json	{"status": 200, "method": "GET", "path": "/swagger/doc.json", "query": "", "ip": "::1", "errors": "", "cost": "396.931µs"}
+[2023-05-01T19:10:09.124+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/favicon-32x32.png	{"status": 304, "method": "GET", "path": "/swagger/favicon-32x32.png", "query": "", "ip": "::1", "errors": "", "cost": "40.431µs"}
+[2023-05-01T19:10:27.889+0800]	[ INFO]	[        blogProject/main.go:87]	3秒超时退出
+[2023-05-01T19:10:27.890+0800]	[ INFO]	[        blogProject/main.go:90]	服务器关闭
+[2023-05-01T19:10:59.186+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/index.html	{"status": 200, "method": "GET", "path": "/swagger/index.html", "query": "", "ip": "::1", "errors": "", "cost": "542.381µs"}
+[2023-05-01T19:10:59.199+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/swagger-ui.css	{"status": 200, "method": "GET", "path": "/swagger/swagger-ui.css", "query": "", "ip": "::1", "errors": "", "cost": "212.534µs"}
+[2023-05-01T19:10:59.200+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/swagger-ui-bundle.js	{"status": 200, "method": "GET", "path": "/swagger/swagger-ui-bundle.js", "query": "", "ip": "::1", "errors": "", "cost": "1.596477ms"}
+[2023-05-01T19:10:59.200+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/swagger-ui-standalone-preset.js	{"status": 200, "method": "GET", "path": "/swagger/swagger-ui-standalone-preset.js", "query": "", "ip": "::1", "errors": "", "cost": "232.446µs"}
+[2023-05-01T19:10:59.331+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/doc.json	{"status": 200, "method": "GET", "path": "/swagger/doc.json", "query": "", "ip": "::1", "errors": "", "cost": "522.148µs"}
+[2023-05-01T19:10:59.340+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/favicon-32x32.png	{"status": 200, "method": "GET", "path": "/swagger/favicon-32x32.png", "query": "", "ip": "::1", "errors": "", "cost": "71.513µs"}
+[2023-05-01T19:12:07.400+0800]	[ INFO]	[        blogProject/main.go:87]	3秒超时退出
+[2023-05-01T19:12:07.401+0800]	[ INFO]	[        blogProject/main.go:90]	服务器关闭
+[2023-05-01T19:12:13.613+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/index.html	{"status": 200, "method": "GET", "path": "/swagger/index.html", "query": "", "ip": "::1", "errors": "", "cost": "744.065µs"}
+[2023-05-01T19:12:13.629+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/swagger-ui.css	{"status": 200, "method": "GET", "path": "/swagger/swagger-ui.css", "query": "", "ip": "::1", "errors": "", "cost": "234.494µs"}
+[2023-05-01T19:12:13.631+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/swagger-ui-bundle.js	{"status": 200, "method": "GET", "path": "/swagger/swagger-ui-bundle.js", "query": "", "ip": "::1", "errors": "", "cost": "2.540502ms"}
+[2023-05-01T19:12:13.631+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/swagger-ui-standalone-preset.js	{"status": 200, "method": "GET", "path": "/swagger/swagger-ui-standalone-preset.js", "query": "", "ip": "::1", "errors": "", "cost": "339.999µs"}
+[2023-05-01T19:12:13.714+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/doc.json	{"status": 200, "method": "GET", "path": "/swagger/doc.json", "query": "", "ip": "::1", "errors": "", "cost": "316.132µs"}
+[2023-05-01T19:12:13.771+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/favicon-32x32.png	{"status": 200, "method": "GET", "path": "/swagger/favicon-32x32.png", "query": "", "ip": "::1", "errors": "", "cost": "27.342µs"}
+[2023-05-01T19:20:30.731+0800]	[ INFO]	[        blogProject/main.go:87]	3秒超时退出
+[2023-05-01T19:20:30.731+0800]	[ INFO]	[        blogProject/main.go:90]	服务器关闭
+[2023-05-01T19:20:42.868+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/index.html	{"status": 200, "method": "GET", "path": "/swagger/index.html", "query": "", "ip": "::1", "errors": "", "cost": "614.611µs"}
+[2023-05-01T19:20:42.885+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/swagger-ui.css	{"status": 200, "method": "GET", "path": "/swagger/swagger-ui.css", "query": "", "ip": "::1", "errors": "", "cost": "165.24µs"}
+[2023-05-01T19:20:42.885+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/swagger-ui-bundle.js	{"status": 200, "method": "GET", "path": "/swagger/swagger-ui-bundle.js", "query": "", "ip": "::1", "errors": "", "cost": "1.272221ms"}
+[2023-05-01T19:20:42.886+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/swagger-ui-standalone-preset.js	{"status": 200, "method": "GET", "path": "/swagger/swagger-ui-standalone-preset.js", "query": "", "ip": "::1", "errors": "", "cost": "223.457µs"}
+[2023-05-01T19:20:42.967+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/doc.json	{"status": 200, "method": "GET", "path": "/swagger/doc.json", "query": "", "ip": "::1", "errors": "", "cost": "533.158µs"}
+[2023-05-01T19:20:43.020+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/favicon-32x32.png	{"status": 200, "method": "GET", "path": "/swagger/favicon-32x32.png", "query": "", "ip": "::1", "errors": "", "cost": "30.142µs"}
+[2023-05-01T19:21:25.044+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/index.html	{"status": 200, "method": "GET", "path": "/swagger/index.html", "query": "", "ip": "::1", "errors": "", "cost": "95.034µs"}
+[2023-05-01T19:21:25.060+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/swagger-ui.css	{"status": 304, "method": "GET", "path": "/swagger/swagger-ui.css", "query": "", "ip": "::1", "errors": "", "cost": "15.504µs"}
+[2023-05-01T19:21:25.060+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/swagger-ui-bundle.js	{"status": 304, "method": "GET", "path": "/swagger/swagger-ui-bundle.js", "query": "", "ip": "::1", "errors": "", "cost": "50.962µs"}
+[2023-05-01T19:21:25.060+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/swagger-ui-standalone-preset.js	{"status": 304, "method": "GET", "path": "/swagger/swagger-ui-standalone-preset.js", "query": "", "ip": "::1", "errors": "", "cost": "15.671µs"}
+[2023-05-01T19:21:25.206+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/doc.json	{"status": 200, "method": "GET", "path": "/swagger/doc.json", "query": "", "ip": "::1", "errors": "", "cost": "311.826µs"}
+[2023-05-01T19:21:25.213+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/favicon-32x32.png	{"status": 304, "method": "GET", "path": "/swagger/favicon-32x32.png", "query": "", "ip": "::1", "errors": "", "cost": "20.479µs"}
+[2023-05-03T20:30:49.875+0800]	[ERROR]	[        blogProject/main.go:64]	listen: listen tcp :8080: bind: address already in use
+main.main.func1
+	/Users/apple/Study/golang/blogProject/main.go:64
+[2023-05-03T20:31:40.342+0800]	[ INFO]	[        blogProject/main.go:87]	3秒超时退出
+[2023-05-03T20:31:40.344+0800]	[ INFO]	[        blogProject/main.go:90]	服务器关闭
+[2023-05-03T20:31:42.405+0800]	[ERROR]	[        blogProject/main.go:64]	listen: listen tcp :8080: bind: address already in use
+main.main.func1
+	/Users/apple/Study/golang/blogProject/main.go:64
+[2023-05-03T20:33:59.990+0800]	[ INFO]	[        blogProject/main.go:87]	3秒超时退出
+[2023-05-03T20:33:59.990+0800]	[ INFO]	[        blogProject/main.go:90]	服务器关闭
+[2023-05-03T20:36:33.023+0800]	[ERROR]	[           router/router.go:39]	初始化 redis 连接失败: dial tcp 127.0.0.1:6379: connect: connection refused
+blogProject/internal/router.NewHttpServer
+	/Users/apple/Study/golang/blogProject/internal/router/router.go:39
+main.main
+	/Users/apple/Study/golang/blogProject/main.go:54
+runtime.main
+	/usr/local/go/src/runtime/proc.go:250
+[2023-05-03T20:36:56.971+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/swagger-ui.css	{"status": 200, "method": "GET", "path": "/swagger/swagger-ui.css", "query": "", "ip": "::1", "errors": "", "cost": "13.405637ms"}
+[2023-05-03T20:36:56.972+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/swagger-ui-standalone-preset.js	{"status": 200, "method": "GET", "path": "/swagger/swagger-ui-standalone-preset.js", "query": "", "ip": "::1", "errors": "", "cost": "14.906981ms"}
+[2023-05-03T20:36:56.992+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/swagger-ui-bundle.js	{"status": 200, "method": "GET", "path": "/swagger/swagger-ui-bundle.js", "query": "", "ip": "::1", "errors": "", "cost": "32.081375ms"}
+[2023-05-03T20:36:57.288+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/doc.json	{"status": 200, "method": "GET", "path": "/swagger/doc.json", "query": "", "ip": "::1", "errors": "", "cost": "442.296µs"}
+[2023-05-04T21:32:57.211+0800]	[ERROR]	[           router/router.go:39]	初始化 redis 连接失败: dial tcp 127.0.0.1:6379: connect: connection refused
+blogProject/internal/router.NewHttpServer
+	/Users/apple/Study/golang/blogProject/internal/router/router.go:39
+main.main
+	/Users/apple/Study/golang/blogProject/main.go:54
+runtime.main
+	/usr/local/go/src/runtime/proc.go:250
+[2023-05-04T21:33:15.450+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/index.html	{"status": 200, "method": "GET", "path": "/swagger/index.html", "query": "", "ip": "::1", "errors": "", "cost": "460.628µs"}
+[2023-05-04T21:33:15.491+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/swagger-ui.css	{"status": 200, "method": "GET", "path": "/swagger/swagger-ui.css", "query": "", "ip": "::1", "errors": "", "cost": "176.783µs"}
+[2023-05-04T21:33:15.496+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/swagger-ui-standalone-preset.js	{"status": 200, "method": "GET", "path": "/swagger/swagger-ui-standalone-preset.js", "query": "", "ip": "::1", "errors": "", "cost": "361.7µs"}
+[2023-05-04T21:33:15.502+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/swagger-ui-bundle.js	{"status": 200, "method": "GET", "path": "/swagger/swagger-ui-bundle.js", "query": "", "ip": "::1", "errors": "", "cost": "4.6368ms"}
+[2023-05-04T21:33:15.777+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/doc.json	{"status": 200, "method": "GET", "path": "/swagger/doc.json", "query": "", "ip": "::1", "errors": "", "cost": "305.704µs"}
+[2023-05-04T21:35:44.526+0800]	[ INFO]	[        blogProject/main.go:87]	3秒超时退出
+[2023-05-04T21:35:44.527+0800]	[ INFO]	[        blogProject/main.go:90]	服务器关闭
+[2023-05-04T21:35:46.289+0800]	[ERROR]	[           router/router.go:39]	初始化 redis 连接失败: dial tcp 127.0.0.1:6379: connect: connection refused
+blogProject/internal/router.NewHttpServer
+	/Users/apple/Study/golang/blogProject/internal/router/router.go:39
+main.main
+	/Users/apple/Study/golang/blogProject/main.go:54
+runtime.main
+	/usr/local/go/src/runtime/proc.go:250
+[2023-05-04T21:38:38.027+0800]	[ERROR]	[           api/admin_api.go:42]	绑定参数失败: invalid character '-' after top-level value
+
+blogProject/internal/api.adminApi.AdminRegister
+	/Users/apple/Study/golang/blogProject/internal/api/admin_api.go:42
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+blogProject/internal/router/middleware.ZapLoggerMiddleware.func1
+	/Users/apple/Study/golang/blogProject/internal/router/middleware/logger.go:21
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2947
+net/http.(*conn).serve
+	/usr/local/go/src/net/http/server.go:1991
+[2023-05-04T21:38:38.027+0800]	[ INFO]	[       middleware/logger.go:26]	/admin/AdminRegister	{"status": 500, "method": "POST", "path": "/admin/AdminRegister", "query": "", "ip": "::1", "errors": "", "cost": "1.996715ms"}
+[2023-05-04T21:39:39.010+0800]	[ERROR]	[           api/admin_api.go:42]	绑定参数失败: parsing time "18980314" as "2006-01-02 15:04:05": cannot parse "0314" as "-"
+
+blogProject/internal/api.adminApi.AdminRegister
+	/Users/apple/Study/golang/blogProject/internal/api/admin_api.go:42
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+blogProject/internal/router/middleware.ZapLoggerMiddleware.func1
+	/Users/apple/Study/golang/blogProject/internal/router/middleware/logger.go:21
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2947
+net/http.(*conn).serve
+	/usr/local/go/src/net/http/server.go:1991
+[2023-05-04T21:39:39.010+0800]	[ INFO]	[       middleware/logger.go:26]	/admin/AdminRegister	{"status": 500, "method": "POST", "path": "/admin/AdminRegister", "query": "", "ip": "::1", "errors": "", "cost": "3.188594ms"}
+[2023-05-04T21:39:59.376+0800]	[ERROR]	[           api/admin_api.go:42]	绑定参数失败: unsupported field type for multipart.FileHeader
+
+blogProject/internal/api.adminApi.AdminRegister
+	/Users/apple/Study/golang/blogProject/internal/api/admin_api.go:42
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+blogProject/internal/router/middleware.ZapLoggerMiddleware.func1
+	/Users/apple/Study/golang/blogProject/internal/router/middleware/logger.go:21
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2947
+net/http.(*conn).serve
+	/usr/local/go/src/net/http/server.go:1991
+[2023-05-04T21:39:59.376+0800]	[ INFO]	[       middleware/logger.go:26]	/admin/AdminRegister	{"status": 500, "method": "POST", "path": "/admin/AdminRegister", "query": "", "ip": "::1", "errors": "", "cost": "544.34µs"}
+[2023-05-04T21:40:35.755+0800]	[ INFO]	[   service/admin_service.go:19]	用户注册接收到的密码为:wang0909
+
+[2023-05-04T21:40:35.755+0800]	[ INFO]	[   service/admin_service.go:21]	开始对明文密码进行加密, 明文密码为: wang0909
+
+[2023-05-04T21:40:35.829+0800]	[ INFO]	[   service/admin_service.go:23]	加密之后的密码为: $2a$10$yXwkf6hqTHqAHt8iN98wh.Q9.uXsIkDA1v6D39AFFn62O1v0WPg1G
+
+[2023-05-04T21:40:35.858+0800]	[DEBUG]	[   zaplogger/gorm_logger.go:96]	info	{"elapsedTime": "28.412075ms", "rowsAffected": 1, "sql": "INSERT INTO `admin` (`username`,`nickname`,`password`,`website`,`birth`,`tel`,`email`,`avatar`,`city`,`school`) VALUES ('斯蒂芬库里','萌神','$2a$10$yXwkf6hqTHqAHt8iN98wh.Q9.uXsIkDA1v6D39AFFn62O1v0WPg1G','勇士总冠军','0000-00-00 00:00:00','13149508638','3268267174@qq.com','','旧金山','哈尔滨理工大学')"}
+[2023-05-04T21:40:35.858+0800]	[ INFO]	[       middleware/logger.go:26]	/admin/AdminRegister	{"status": 200, "method": "POST", "path": "/admin/AdminRegister", "query": "", "ip": "::1", "errors": "", "cost": "102.801317ms"}
+[2023-05-05T17:18:53.535+0800]	[ INFO]	[        blogProject/main.go:87]	3秒超时退出
+[2023-05-05T17:18:53.536+0800]	[ INFO]	[        blogProject/main.go:90]	服务器关闭
+[2023-05-05T17:18:57.980+0800]	[ERROR]	[           router/router.go:39]	初始化 redis 连接失败: dial tcp 127.0.0.1:6379: connect: connection refused
+blogProject/internal/router.NewHttpServer
+	/Users/apple/Study/golang/blogProject/internal/router/router.go:39
+main.main
+	/Users/apple/Study/golang/blogProject/main.go:54
+runtime.main
+	/usr/local/go/src/runtime/proc.go:250
+[2023-05-05T17:19:36.135+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/index.html	{"status": 200, "method": "GET", "path": "/swagger/index.html", "query": "", "ip": "::1", "errors": "", "cost": "501.256µs"}
+[2023-05-05T17:19:36.155+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/swagger-ui.css	{"status": 200, "method": "GET", "path": "/swagger/swagger-ui.css", "query": "", "ip": "::1", "errors": "", "cost": "255.927µs"}
+[2023-05-05T17:19:36.155+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/swagger-ui-standalone-preset.js	{"status": 200, "method": "GET", "path": "/swagger/swagger-ui-standalone-preset.js", "query": "", "ip": "::1", "errors": "", "cost": "324.951µs"}
+[2023-05-05T17:19:36.162+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/swagger-ui-bundle.js	{"status": 200, "method": "GET", "path": "/swagger/swagger-ui-bundle.js", "query": "", "ip": "::1", "errors": "", "cost": "5.880825ms"}
+[2023-05-05T17:19:36.394+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/doc.json	{"status": 200, "method": "GET", "path": "/swagger/doc.json", "query": "", "ip": "::1", "errors": "", "cost": "490.465µs"}
+[2023-05-05T17:19:36.400+0800]	[ INFO]	[       middleware/logger.go:26]	/swagger/favicon-32x32.png	{"status": 200, "method": "GET", "path": "/swagger/favicon-32x32.png", "query": "", "ip": "::1", "errors": "", "cost": "58.458µs"}
+[2023-05-05T17:20:33.154+0800]	[DEBUG]	[   zaplogger/gorm_logger.go:96]	info	{"elapsedTime": "1.914148ms", "rowsAffected": 1, "sql": "INSERT INTO `admin` (`avatar`) VALUES ('./uploads/20230505172033.jpeg')"}
+[2023-05-05T17:20:33.154+0800]	[ INFO]	[       middleware/logger.go:26]	/avatar/UploadAvatar	{"status": 200, "method": "POST", "path": "/avatar/UploadAvatar", "query": "", "ip": "::1", "errors": "", "cost": "9.832866ms"}
+[2023-05-05T17:21:25.524+0800]	[DEBUG]	[   zaplogger/gorm_logger.go:96]	info	{"elapsedTime": "1.228304ms", "rowsAffected": 1, "sql": "INSERT INTO `admin` (`avatar`) VALUES ('./uploads/20230505172125.jpeg')"}
+[2023-05-05T17:21:25.524+0800]	[ INFO]	[       middleware/logger.go:26]	/avatar/UploadAvatar	{"status": 200, "method": "POST", "path": "/avatar/UploadAvatar", "query": "", "ip": "::1", "errors": "", "cost": "5.476094ms"}
+[2023-05-05T17:27:59.704+0800]	[DEBUG]	[   zaplogger/gorm_logger.go:96]	info	{"elapsedTime": "1.185995ms", "rowsAffected": 1, "sql": "INSERT INTO `admin` (`avatar`) VALUES ('./uploads/20230505172759.jpeg')"}
+[2023-05-05T17:27:59.704+0800]	[ INFO]	[       middleware/logger.go:26]	/avatar/UploadAvatar	{"status": 200, "method": "POST", "path": "/avatar/UploadAvatar", "query": "", "ip": "::1", "errors": "", "cost": "8.468484ms"}
+[2023-05-05T17:29:26.201+0800]	[ INFO]	[        blogProject/main.go:87]	3秒超时退出
+[2023-05-05T17:29:26.202+0800]	[ INFO]	[        blogProject/main.go:90]	服务器关闭
+[2023-05-05T17:29:30.531+0800]	[ERROR]	[           router/router.go:39]	初始化 redis 连接失败: dial tcp 127.0.0.1:6379: connect: connection refused
+blogProject/internal/router.NewHttpServer
+	/Users/apple/Study/golang/blogProject/internal/router/router.go:39
+main.main
+	/Users/apple/Study/golang/blogProject/main.go:54
+runtime.main
+	/usr/local/go/src/runtime/proc.go:250
+[2023-05-05T17:29:39.862+0800]	[DEBUG]	[   zaplogger/gorm_logger.go:96]	info	{"elapsedTime": "2.248362ms", "rowsAffected": 1, "sql": "INSERT INTO `admin` (`avatar`) VALUES ('./uploads/20230505172939.jpeg')"}
+[2023-05-05T17:29:39.862+0800]	[ INFO]	[       middleware/logger.go:26]	/avatar/UploadAvatar	{"status": 200, "method": "POST", "path": "/avatar/UploadAvatar", "query": "", "ip": "::1", "errors": "", "cost": "9.909218ms"}
+[2023-05-05T17:39:06.569+0800]	[ INFO]	[        blogProject/main.go:87]	3秒超时退出
+[2023-05-05T17:39:06.569+0800]	[ INFO]	[        blogProject/main.go:90]	服务器关闭
+[2023-05-05T17:39:11.107+0800]	[ERROR]	[           router/router.go:39]	初始化 redis 连接失败: dial tcp 127.0.0.1:6379: connect: connection refused
+blogProject/internal/router.NewHttpServer
+	/Users/apple/Study/golang/blogProject/internal/router/router.go:39
+main.main
+	/Users/apple/Study/golang/blogProject/main.go:54
+runtime.main
+	/usr/local/go/src/runtime/proc.go:250
+[2023-05-05T17:39:15.360+0800]	[DEBUG]	[   zaplogger/gorm_logger.go:96]	info	{"elapsedTime": "1.102644ms", "rowsAffected": 0, "sql": "UPDATE `admin` SET `avatar`='./uploads/20230505173915.jpeg' WHERE id = 1"}
+[2023-05-05T17:39:15.360+0800]	[ INFO]	[       middleware/logger.go:26]	/avatar/UploadAvatar	{"status": 200, "method": "POST", "path": "/avatar/UploadAvatar", "query": "", "ip": "::1", "errors": "", "cost": "10.80945ms"}
+[2023-05-05T17:40:10.498+0800]	[DEBUG]	[   zaplogger/gorm_logger.go:96]	info	{"elapsedTime": "3.750445ms", "rowsAffected": 1, "sql": "UPDATE `admin` SET `avatar`='./uploads/20230505174010.jpeg' WHERE id = 2"}
+[2023-05-05T17:40:10.498+0800]	[ INFO]	[       middleware/logger.go:26]	/avatar/UploadAvatar	{"status": 200, "method": "POST", "path": "/avatar/UploadAvatar", "query": "", "ip": "::1", "errors": "", "cost": "18.467562ms"}
+[2023-05-05T17:42:39.145+0800]	[ERROR]	[           api/admin_api.go:41]	绑定参数失败: invalid character '-' after top-level value
+
+blogProject/internal/api.adminApi.AdminRegister
+	/Users/apple/Study/golang/blogProject/internal/api/admin_api.go:41
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+blogProject/internal/router/middleware.ZapLoggerMiddleware.func1
+	/Users/apple/Study/golang/blogProject/internal/router/middleware/logger.go:21
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/Users/apple/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2947
+net/http.(*conn).serve
+	/usr/local/go/src/net/http/server.go:1991
+[2023-05-05T17:42:39.145+0800]	[ INFO]	[       middleware/logger.go:26]	/admin/AdminRegister	{"status": 500, "method": "POST", "path": "/admin/AdminRegister", "query": "", "ip": "::1", "errors": "", "cost": "340.025µs"}
+[2023-05-05T17:42:55.748+0800]	[ INFO]	[   service/admin_service.go:23]	用户注册接收到的密码为:wang0909
+
+[2023-05-05T17:42:55.748+0800]	[ INFO]	[   service/admin_service.go:25]	开始对明文密码进行加密, 明文密码为: wang0909
+
+[2023-05-05T17:42:55.843+0800]	[ INFO]	[   service/admin_service.go:27]	加密之后的密码为: $2a$10$75qcEJLe2cqaxWZLYDFGke1ZZQQh/WEPUkVZW/hdKwieBEsfzmFOS
+
+[2023-05-05T17:42:55.845+0800]	[DEBUG]	[   zaplogger/gorm_logger.go:96]	info	{"elapsedTime": "1.634292ms", "rowsAffected": 1, "sql": "INSERT INTO `admin` (`username`,`nickname`,`password`,`website`,`birth`,`tel`,`email`,`avatar`,`city`,`school`) VALUES ('詹姆斯','小皇帝','$2a$10$75qcEJLe2cqaxWZLYDFGke1ZZQQh/WEPUkVZW/hdKwieBEsfzmFOS','双手一摊，勒布朗詹','0000-00-00 00:00:00','12345678912','23421234@qq.com',NULL,'洛杉矶','哈弗')"}
+[2023-05-05T17:42:55.845+0800]	[ INFO]	[       middleware/logger.go:26]	/admin/AdminRegister	{"status": 200, "method": "POST", "path": "/admin/AdminRegister", "query": "", "ip": "::1", "errors": "", "cost": "97.466176ms"}

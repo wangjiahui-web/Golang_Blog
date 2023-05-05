@@ -1,30 +1,18 @@
 basePath: /
 definitions:
-  ctime.CTime:
+  blogProject_gen_model.User:
     properties:
-      time.Time:
+      avatar:
         type: string
-    type: object
-  model.User:
-    properties:
       create_time:
-        allOf:
-        - $ref: '#/definitions/ctime.CTime'
-        description: 记录创建时间
-      is_delete:
-        description: 删除
+        type: string
+      id:
         type: integer
       password:
-        description: 密码
         type: string
       tel:
-        description: 电话号码
         type: string
-      user_id:
-        description: 用户 ID
-        type: integer
       username:
-        description: 用户名
         type: string
     type: object
   swagger.Http400:
@@ -77,6 +65,160 @@ info:
   title: 这里写标题
   version: "1.0"
 paths:
+  /admin/AdminLogin:
+    post:
+      consumes:
+      - multipart/form-data
+      description: Post 请求, 发送 Json 数据, 参数在消息体中 管理员登陆
+      parameters:
+      - description: 登陆的用户名
+        in: formData
+        maxLength: 32
+        minLength: 1
+        name: username
+        type: string
+      - description: 用户密码
+        in: formData
+        maxLength: 32
+        minLength: 1
+        name: password
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/swagger.HttpOk'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/swagger.Http400'
+        "404":
+          description: Page Not Found
+          schema:
+            $ref: '#/definitions/swagger.Http404'
+        "500":
+          description: InternalError
+          schema:
+            $ref: '#/definitions/swagger.Http500'
+      summary: Post 请求, 发送 Json 数据, 参数在消息体中 管理员登陆
+      tags:
+      - adminApi
+  /admin/AdminRegister:
+    post:
+      consumes:
+      - multipart/form-data
+      description: Post 请求, 发送 Json 数据, 参数在消息体中 管理员注册
+      parameters:
+      - description: 要注册的用户名
+        in: formData
+        maxLength: 32
+        minLength: 1
+        name: username
+        type: string
+      - description: 要注册的昵称
+        in: formData
+        maxLength: 32
+        minLength: 1
+        name: nickname
+        type: string
+      - description: 用户密码
+        in: formData
+        maxLength: 32
+        minLength: 1
+        name: password
+        type: string
+      - description: 要注册的个人主页
+        in: formData
+        maxLength: 32
+        minLength: 1
+        name: website
+        type: string
+      - description: 要注册的生日
+        in: formData
+        name: birth
+        type: string
+      - description: 电话号码
+        in: formData
+        maxLength: 11
+        minLength: 11
+        name: tel
+        type: string
+      - description: 邮件地址
+        in: formData
+        name: email
+        type: string
+      - description: 所在城市
+        in: formData
+        name: city
+        type: string
+      - description: 毕业院校
+        in: formData
+        name: school
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/swagger.HttpOk'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/swagger.Http400'
+        "404":
+          description: Page Not Found
+          schema:
+            $ref: '#/definitions/swagger.Http404'
+        "500":
+          description: InternalError
+          schema:
+            $ref: '#/definitions/swagger.Http500'
+      summary: Post 请求, 发送 Json 数据, 参数在消息体中 管理员注册
+      tags:
+      - adminApi
+  /avatar/UploadAvatar:
+    post:
+      consumes:
+      - multipart/form-data
+      description: Post 请求, 发送 表单 数据, 参数在消息体中，上传头像
+      parameters:
+      - description: 注册头像的id
+        in: formData
+        name: id
+        type: integer
+      - description: 注册头像的表
+        in: formData
+        name: table
+        type: string
+      - description: 上传头像
+        in: formData
+        name: avatar
+        type: file
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/swagger.HttpOk'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/swagger.Http400'
+        "404":
+          description: Page Not Found
+          schema:
+            $ref: '#/definitions/swagger.Http404'
+        "500":
+          description: InternalError
+          schema:
+            $ref: '#/definitions/swagger.Http500'
+      summary: Post 请求, 发送 表单 数据, 参数在消息体中，上传头像
+      tags:
+      - avatarApi
   /example/getAuthorizationHeader:
     get:
       consumes:
@@ -404,7 +546,7 @@ paths:
         name: user
         required: true
         schema:
-          $ref: '#/definitions/model.User'
+          $ref: '#/definitions/blogProject_gen_model.User'
       produces:
       - application/json
       responses:
@@ -448,7 +590,7 @@ paths:
           description: OK
           schema:
             items:
-              $ref: '#/definitions/model.User'
+              $ref: '#/definitions/blogProject_gen_model.User'
             type: array
         "400":
           description: Bad Request
@@ -595,6 +737,92 @@ paths:
       summary: 最简单的 POST 请求, 前端不传递任何参数
       tags:
       - exampleApi
+  /user/UserLogin:
+    post:
+      consumes:
+      - multipart/form-data
+      description: Post 请求, 发送 Json 数据, 参数在消息体中 用户登陆
+      parameters:
+      - description: 登陆的用户名
+        in: formData
+        maxLength: 32
+        minLength: 1
+        name: username
+        type: string
+      - description: 用户密码
+        in: formData
+        maxLength: 32
+        minLength: 1
+        name: password
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/swagger.HttpOk'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/swagger.Http400'
+        "404":
+          description: Page Not Found
+          schema:
+            $ref: '#/definitions/swagger.Http404'
+        "500":
+          description: InternalError
+          schema:
+            $ref: '#/definitions/swagger.Http500'
+      summary: Post 请求, 发送 Json 数据, 参数在消息体中 用户登陆
+      tags:
+      - userApi
+  /user/UserRegister:
+    post:
+      consumes:
+      - multipart/form-data
+      description: Post 请求, 发送 Json 数据, 参数在消息体中 用户注册
+      parameters:
+      - description: 要注册的用户名
+        in: formData
+        maxLength: 32
+        minLength: 1
+        name: username
+        type: string
+      - description: 用户密码
+        in: formData
+        maxLength: 32
+        minLength: 1
+        name: password
+        type: string
+      - description: 电话号码
+        in: formData
+        maxLength: 11
+        minLength: 11
+        name: tel
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/swagger.HttpOk'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/swagger.Http400'
+        "404":
+          description: Page Not Found
+          schema:
+            $ref: '#/definitions/swagger.Http404'
+        "500":
+          description: InternalError
+          schema:
+            $ref: '#/definitions/swagger.Http500'
+      summary: Post 请求, 发送 Json 数据, 参数在消息体中 用户注册
+      tags:
+      - userApi
 securityDefinitions:
   ApiKeyAuth:
     description: Description for what is this security definition being used

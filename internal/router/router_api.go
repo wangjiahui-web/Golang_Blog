@@ -41,4 +41,21 @@ func setupApiRouter(r *gin.Engine) {
 		// POST 请求, 发送 x-www-form-urlencodered 类型的表单数据, 参数在消息体中, 编码方式为 urlencoder
 		exampleGroup.POST("/postUrlEncodedFormData", api.ExampleApi.PostUrlEncodedFormData)
 	}
+
+	userGroup := r.Group("/user")
+	{
+		userGroup.POST("/UserRegister",api.UserApi.UserRegister)
+		userGroup.POST("/UserLogin",api.UserApi.UserLogin)
+	}
+
+	avatarGroup := r.Group("/avatar")
+	{
+		avatarGroup.POST("/UploadAvatar",api.AvatarApi.UploadAvatar)
+	}
+
+	adminGroup := r.Group("/admin")
+	{
+		adminGroup.POST("/AdminRegister",api.AdminApi.AdminRegister)
+		adminGroup.POST("/AdminLogin",api.AdminApi.AdminLogin)
+	}
 }

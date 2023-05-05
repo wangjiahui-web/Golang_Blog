@@ -1,8 +1,8 @@
 package api
 
 import (
+	"blogProject/gen/model"
 	"blogProject/internal/pkg/resp"
-	"blogProject/model"
 	"github.com/gin-gonic/gin"
 	"net/http"
 

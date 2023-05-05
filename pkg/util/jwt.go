@@ -19,7 +19,7 @@ const TokenExpireDuration = time.Hour * 24
 // 如果想要保存更多信息，都可以添加到这个结构体中
 type CustomClaims struct {
 	// 可根据需要自行添加字段
-	Username             string `json:"username"`
+	Username    string `json:"username"`
 	jwt.RegisteredClaims        // 内嵌标准的声明
 }
 

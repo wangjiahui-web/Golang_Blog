@@ -54,7 +54,7 @@ type ZapConfig struct {
 //
 type JwtConfig struct {
 	TokenHeader string `json:"token_header" mapstructure:"tokenHeader"` // 请求头 key 的名称
-	Secret      string `json:"secret" mapstructure:"secret"`            // 用于 Jwt 计算签名的字符串
+	Secret      []byte `json:"secret" mapstructure:"secret"`            // 用于 Jwt 计算签名的字符串
 	Expire      int64  `json:"expire" mapstructure:"expire"`            // 过期时长(单位:秒)
 	TokenHead   string `json:"token_head" mapstructure:"tokenHead"`     // 请求头内容中应该携带的头信息,本程序要求内容以 Bearer+空格 开头
 }

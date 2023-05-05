@@ -4,11 +4,19 @@ import (
 	"blogProject/pkg/ctime"
 )
 
+const TableNameUser = "user"
+
+// User mapped from table <user>
 type User struct {
-	UserID        int         `json:"user_id" gorm:"column:user_id"`                 // 用户 ID
-	Username      string      `json:"username" gorm:"column:username"`               // 用户名
-	Password      string      `json:"password" gorm:"column:password"`               // 密码
-	Tel           string      `json:"tel" gorm:"column:tel"`                         // 电话号码
-	CreateTime    ctime.CTime `json:"create_time" gorm:"column:create_time"`         // 记录创建时间
-	IsDelete      int         `json:"is_delete" gorm:"column:is_delete"`             // 删除
+	ID         int64      `gorm:"column:id;type:bigint(20);primaryKey;autoIncrement:true;comment:主键" json:"id"`
+	Username   string     `gorm:"column:username;type:varchar(20);not null;comment:用户名" json:"username"`
+	Password   string     `gorm:"column:password;type:varchar(128);not null;comment:密码" json:"password"`
+	Tel        *string    `gorm:"column:tel;type:varchar(30);comment:手机号" json:"tel"`
+	Avatar     *string    `gorm:"column:avatar;type:varchar(255);comment:用户头像地址" json:"avatar"`
+	CreateTime *ctime.CTime `gorm:"column:create_time;type:datetime;default:CURRENT_TIMESTAMP;comment:创建时间" json:"create_time"`
+}
+
+// TableName User's table name
+func (*User) TableName() string {
+	return TableNameUser
 }

@@ -1,9 +1,12 @@
 package cache
 
 import (
+	"blogProject/model"
 	"blogProject/pkg/config"
+	"encoding/json"
 	"github.com/go-redis/redis/v8"
 	"github.com/pkg/errors"
+	"go.uber.org/zap"
 	"golang.org/x/net/context"
 	"time"
 )
@@ -62,3 +65,28 @@ func Get(key string) (string, error) {
 	return value, nil
 }
 
+func SaveLoginUser(user *model.User) error {
+	bytes, err := json.Marshal(user)
+	if err != nil {
+		zap.S().Errorf("将 user 对象序列化成 json 失败: %s", err)
+		return err
+	}
+	if err = Set(LoginUserKey+user.Username, string(bytes), LoginUserExpiredDuration); err != nil {
+		zap.L().Error(err.Error())
+		return err
+	}
+	return nil
+}
+
+func SaveLoginAdmin(admin *model.Admin) error {
+	bytes, err := json.Marshal(admin)
+	if err != nil {
+		zap.S().Errorf("将 admin 对象序列化成 json 失败: %s", err)
+		return err
+	}
+	if err = Set(LoginUserKey+*admin.Username, string(bytes), LoginUserExpiredDuration); err != nil {
+		zap.L().Error(err.Error())
+		return err
+	}
+	return nil
+}
