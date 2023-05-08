@@ -15,6 +15,59 @@ definitions:
       username:
         type: string
     type: object
+  blogProject_model.Blog:
+    properties:
+      admin_id:
+        type: integer
+      category_id:
+        type: integer
+      content:
+        type: string
+      first_image:
+        type: string
+      id:
+        type: integer
+      is_delete:
+        type: integer
+      post_time:
+        $ref: '#/definitions/ctime.CTime'
+      read_count:
+        type: integer
+      summary:
+        type: string
+      title:
+        type: string
+    type: object
+  blogProject_model.Comment:
+    properties:
+      blog:
+        $ref: '#/definitions/blogProject_model.Blog'
+      blog_id:
+        type: integer
+      child_comment:
+        items:
+          $ref: '#/definitions/blogProject_model.Comment'
+        type: array
+      content:
+        type: string
+      create_time:
+        $ref: '#/definitions/ctime.CTime'
+      id:
+        type: integer
+      level:
+        type: integer
+      parent_id:
+        type: integer
+      to_user_id:
+        type: integer
+      user_id:
+        type: integer
+    type: object
+  ctime.CTime:
+    properties:
+      time.Time:
+        type: string
+    type: object
   swagger.Http400:
     properties:
       code:
@@ -50,6 +103,44 @@ definitions:
       msg:
         example: 接口调用成功
         type: string
+    type: object
+  vo.BackBlog:
+    properties:
+      first_image:
+        type: string
+      id:
+        type: integer
+      post_time:
+        $ref: '#/definitions/ctime.CTime'
+      summary:
+        type: string
+      title:
+        type: string
+    type: object
+  vo.BackPicture:
+    properties:
+      id:
+        type: integer
+      image_path:
+        type: string
+    type: object
+  vo.BlogDetailWithComment:
+    properties:
+      blog:
+        $ref: '#/definitions/blogProject_model.Blog'
+      comments:
+        items:
+          $ref: '#/definitions/vo.CommentTree'
+        type: array
+    type: object
+  vo.CommentTree:
+    properties:
+      child_comment:
+        items:
+          $ref: '#/definitions/vo.CommentTree'
+        type: array
+      comment:
+        $ref: '#/definitions/blogProject_model.Comment'
     type: object
 host: localhost:8080
 info:
@@ -219,6 +310,114 @@ paths:
       summary: Post 请求, 发送 表单 数据, 参数在消息体中，上传头像
       tags:
       - avatarApi
+  /blog/GetBlogDetail/id/{id}:
+    get:
+      consumes:
+      - application/json
+      description: 根据博客 ID 查询出博客详情
+      parameters:
+      - description: 博客 ID
+        in: path
+        name: id
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/vo.BlogDetailWithComment'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/swagger.Http400'
+        "404":
+          description: Page Not Found
+          schema:
+            $ref: '#/definitions/swagger.Http404'
+        "500":
+          description: InternalError
+          schema:
+            $ref: '#/definitions/swagger.Http500'
+      summary: 根据博客 ID 查询出博客详情
+      tags:
+      - blogApi
+  /blog/GetBlogSummaryList:
+    get:
+      consumes:
+      - application/json
+      description: 分页获取博客信息
+      parameters:
+      - description: 页码(从 1 开始)
+        in: query
+        name: pageNum
+        required: true
+        type: integer
+      - description: 每页的记录数
+        in: query
+        name: pageSize
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/vo.BackBlog'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/swagger.Http400'
+        "404":
+          description: Page Not Found
+          schema:
+            $ref: '#/definitions/swagger.Http404'
+        "500":
+          description: InternalError
+          schema:
+            $ref: '#/definitions/swagger.Http500'
+      summary: 分页获取博客信息
+      tags:
+      - blogApi
+  /blog/GetPagedPictureList:
+    get:
+      consumes:
+      - application/json
+      description: 分页获取用户信息
+      parameters:
+      - description: 页码(从 1 开始)
+        in: query
+        name: pageNum
+        required: true
+        type: integer
+      - description: 每页的记录数
+        in: query
+        name: pageSize
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/vo.BackPicture'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/swagger.Http400'
+        "404":
+          description: Page Not Found
+          schema:
+            $ref: '#/definitions/swagger.Http404'
+        "500":
+          description: InternalError
+          schema:
+            $ref: '#/definitions/swagger.Http500'
+      summary: 分页获取用户信息
+      tags:
+      - blogApi
   /example/getAuthorizationHeader:
     get:
       consumes:

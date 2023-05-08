@@ -245,6 +245,169 @@
                 }
             }
         },
+        "/blog/GetBlogDetail/id/{id}": {
+            "get": {
+                "description": "根据博客 ID 查询出博客详情",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "blogApi"
+                ],
+                "summary": "根据博客 ID 查询出博客详情",
+                "parameters": [
+                    {
+                        "type": "integer",
+                        "description": "博客 ID",
+                        "name": "id",
+                        "in": "path"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/vo.BlogDetailWithComment"
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request",
+                        "schema": {
+                            "$ref": "#/definitions/swagger.Http400"
+                        }
+                    },
+                    "404": {
+                        "description": "Page Not Found",
+                        "schema": {
+                            "$ref": "#/definitions/swagger.Http404"
+                        }
+                    },
+                    "500": {
+                        "description": "InternalError",
+                        "schema": {
+                            "$ref": "#/definitions/swagger.Http500"
+                        }
+                    }
+                }
+            }
+        },
+        "/blog/GetBlogSummaryList": {
+            "get": {
+                "description": "分页获取博客信息",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "blogApi"
+                ],
+                "summary": "分页获取博客信息",
+                "parameters": [
+                    {
+                        "type": "integer",
+                        "description": "页码(从 1 开始)",
+                        "name": "pageNum",
+                        "in": "query",
+                        "required": true
+                    },
+                    {
+                        "type": "integer",
+                        "description": "每页的记录数",
+                        "name": "pageSize",
+                        "in": "query",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/vo.BackBlog"
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request",
+                        "schema": {
+                            "$ref": "#/definitions/swagger.Http400"
+                        }
+                    },
+                    "404": {
+                        "description": "Page Not Found",
+                        "schema": {
+                            "$ref": "#/definitions/swagger.Http404"
+                        }
+                    },
+                    "500": {
+                        "description": "InternalError",
+                        "schema": {
+                            "$ref": "#/definitions/swagger.Http500"
+                        }
+                    }
+                }
+            }
+        },
+        "/blog/GetPagedPictureList": {
+            "get": {
+                "description": "分页获取用户信息",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "blogApi"
+                ],
+                "summary": "分页获取用户信息",
+                "parameters": [
+                    {
+                        "type": "integer",
+                        "description": "页码(从 1 开始)",
+                        "name": "pageNum",
+                        "in": "query",
+                        "required": true
+                    },
+                    {
+                        "type": "integer",
+                        "description": "每页的记录数",
+                        "name": "pageSize",
+                        "in": "query",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/vo.BackPicture"
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request",
+                        "schema": {
+                            "$ref": "#/definitions/swagger.Http400"
+                        }
+                    },
+                    "404": {
+                        "description": "Page Not Found",
+                        "schema": {
+                            "$ref": "#/definitions/swagger.Http404"
+                        }
+                    },
+                    "500": {
+                        "description": "InternalError",
+                        "schema": {
+                            "$ref": "#/definitions/swagger.Http500"
+                        }
+                    }
+                }
+            }
+        },
         "/example/getAuthorizationHeader": {
             "get": {
                 "description": "Get 请求, 请求参数是 URL 的一部分",
@@ -1169,6 +1332,87 @@
                 }
             }
         },
+        "blogProject_model.Blog": {
+            "type": "object",
+            "properties": {
+                "admin_id": {
+                    "type": "integer"
+                },
+                "category_id": {
+                    "type": "integer"
+                },
+                "content": {
+                    "type": "string"
+                },
+                "first_image": {
+                    "type": "string"
+                },
+                "id": {
+                    "type": "integer"
+                },
+                "is_delete": {
+                    "type": "integer"
+                },
+                "post_time": {
+                    "$ref": "#/definitions/ctime.CTime"
+                },
+                "read_count": {
+                    "type": "integer"
+                },
+                "summary": {
+                    "type": "string"
+                },
+                "title": {
+                    "type": "string"
+                }
+            }
+        },
+        "blogProject_model.Comment": {
+            "type": "object",
+            "properties": {
+                "blog": {
+                    "$ref": "#/definitions/blogProject_model.Blog"
+                },
+                "blog_id": {
+                    "type": "integer"
+                },
+                "child_comment": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/blogProject_model.Comment"
+                    }
+                },
+                "content": {
+                    "type": "string"
+                },
+                "create_time": {
+                    "$ref": "#/definitions/ctime.CTime"
+                },
+                "id": {
+                    "type": "integer"
+                },
+                "level": {
+                    "type": "integer"
+                },
+                "parent_id": {
+                    "type": "integer"
+                },
+                "to_user_id": {
+                    "type": "integer"
+                },
+                "user_id": {
+                    "type": "integer"
+                }
+            }
+        },
+        "ctime.CTime": {
+            "type": "object",
+            "properties": {
+                "time.Time": {
+                    "type": "string"
+                }
+            }
+        },
         "swagger.Http400": {
             "type": "object",
             "properties": {
@@ -1218,6 +1462,65 @@
                 "msg": {
                     "type": "string",
                     "example": "接口调用成功"
+                }
+            }
+        },
+        "vo.BackBlog": {
+            "type": "object",
+            "properties": {
+                "first_image": {
+                    "type": "string"
+                },
+                "id": {
+                    "type": "integer"
+                },
+                "post_time": {
+                    "$ref": "#/definitions/ctime.CTime"
+                },
+                "summary": {
+                    "type": "string"
+                },
+                "title": {
+                    "type": "string"
+                }
+            }
+        },
+        "vo.BackPicture": {
+            "type": "object",
+            "properties": {
+                "id": {
+                    "type": "integer"
+                },
+                "image_path": {
+                    "type": "string"
+                }
+            }
+        },
+        "vo.BlogDetailWithComment": {
+            "type": "object",
+            "properties": {
+                "blog": {
+                    "$ref": "#/definitions/blogProject_model.Blog"
+                },
+                "comments": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/vo.CommentTree"
+                    }
+                }
+            }
+        },
+        "vo.CommentTree": {
+            "type": "object",
+            "properties": {
+                "child_comment": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/vo.CommentTree"
+                    }
+                },
+                "comment": {
+                    "$ref": "#/definitions/blogProject_model.Comment"
                 }
             }
         }

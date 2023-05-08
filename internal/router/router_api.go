@@ -58,4 +58,13 @@ func setupApiRouter(r *gin.Engine) {
 		adminGroup.POST("/AdminRegister",api.AdminApi.AdminRegister)
 		adminGroup.POST("/AdminLogin",api.AdminApi.AdminLogin)
 	}
+
+	blogGroup := r.Group("/blog")
+	{
+		blogGroup.GET("/GetPagedPictureList",api.BlogApi.GetPagedPictureList)
+		blogGroup.GET("/GetBlogSummaryList",api.BlogApi.GetBlogSummaryList)
+		blogGroup.GET("/GetBlogDetail/id/:id",api.BlogApi.GetBlogDetail)
+
+	}
+
 }
